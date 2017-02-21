@@ -1,0 +1,8 @@
+site_name: Transgov ghana api documentation
+pages:
+    - Home: index.md
+    - Account_registration: account_registration.md
+    - Developmental_Project: developmental_project.md
+    - Report_case: report_case.md
+    - Events: transgov_events.md
+theme: readthedocs
