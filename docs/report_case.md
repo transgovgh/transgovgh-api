@@ -1,3 +1,24 @@
+### Get all Case categories
+
+`Endpoint: POST https://api.example.org/api/v1.0/case-category`
+
+  `Response: 201 Created`
+
+    [
+      {
+        "id": 1,
+        "category_name": "Electricity",
+        "description": "This is information about electricity",
+        "author": 1
+      },
+      {
+        "id": 2,
+        "category_name": "Water",
+        "description": "This in information about water works",
+        "author": 1
+      }
+    ]
+
 ### Create a case
 
 `Endpoint: POST https://api.example.org/api/v1.0/project-case/create-case/`
