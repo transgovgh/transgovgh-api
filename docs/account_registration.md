@@ -38,7 +38,7 @@
 
 
 ### Update Profile
-`Endpoint: POST https://api.example.org/v1.0/users/2/update-profile/0`
+`Endpoint: POST https://api.example.org/v1.0/users/{pk}/update-profile/`
   
   ``Request: [JSON Body]``
 
