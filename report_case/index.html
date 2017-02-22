@@ -76,6 +76,9 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#get-all-case-categories">Get all Case categories</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#create-a-case">Create a case</a></li>
                 
             
@@ -147,7 +150,25 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="create-a-case">Create a case</h3>
+                <h3 id="get-all-case-categories">Get all Case categories</h3>
+<p><code>Endpoint: POST https://api.example.org/api/v1.0/case-category</code></p>
+<p><code>Response: 201 Created</code></p>
+<pre><code>[
+  {
+    "id": 1,
+    "category_name": "Electricity",
+    "description": "This is information about electricity",
+    "author": 1
+  },
+  {
+    "id": 2,
+    "category_name": "Water",
+    "description": "This in information about water works",
+    "author": 1
+  }
+]
+</code></pre>
+<h3 id="create-a-case">Create a case</h3>
 <p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/create-case/</code></p>
 <p><code>Request: [JSON Body]</code></p>
 <pre><code>{
