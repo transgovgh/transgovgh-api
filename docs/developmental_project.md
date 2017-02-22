@@ -1,5 +1,5 @@
 ### Get All projects (Version 1.0)
-`Endpoint: POST https://api.example.org/api/v1.0/all-projects/`
+`Endpoint: GET https://api.example.org/api/v1.0/all-projects/`
 
  ``Response: 200 ok``
 
@@ -88,36 +88,11 @@
         "published_date": null,
         "modified": "2017-02-20T18:58:58.516633Z"
       },
-      {
-        "id": 3,
-        "project_name": "Project Information",
-        "project_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
-        "amount_allocated": "0",
-        "estimated_budget_GOG": "0",
-        "estimated_budget_IGF": "0",
-        "estimated_budget_Donor": "0",
-        "actual_Budget_Spend": "0",
-        "project_contact_person": "Kennedy Anyinatoe",
-        "project_contractor": "Kennedy Anyinatoe",
-        "project_status": "Ongoing",
-        "project_category": "roads and highways",
-        "start_date": "2017-02-20",
-        "end_date": "2017-02-20",
-        "completeness": "20",
-        "project_location": "Tema",
-        "regions": "Greater Accra",
-        "sub_metro": "Ayawaso East Sub Metro",
-        "position": "5.9657536710655235,-0.703125",
-        "project_image": "http://localhost:8000/media/images/Screenshot_from_2016-01-26_195933_dq4G1DT.jpg",
-        "projectImages": [],
-        "count_likes": 1,
-        "published_date": null,
-        "modified": "2017-02-20T19:02:16.256789Z"
-      }
+      
     ]
 
 ### Get All projects  with pagination (Version 2.0)
-`Endpoint: POST https://api.example.org/api/v2.0/all-projects/`
+`Endpoint: GET https://api.example.org/api/v2.0/all-projects/`
 
  ``Response: 200 ok``
 
@@ -209,33 +184,8 @@
             "count_likes": 0,
             "published_date": null,
             "modified": "2017-02-20T18:58:58.516633Z"
-          },
-          {
-            "id": 3,
-            "project_name": "Project Information",
-            "project_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
-            "amount_allocated": "0",
-            "estimated_budget_GOG": "0",
-            "estimated_budget_IGF": "0",
-            "estimated_budget_Donor": "0",
-            "actual_Budget_Spend": "0",
-            "project_contact_person": "Kennedy Anyinatoe",
-            "project_contractor": "Kennedy Anyinatoe",
-            "project_status": "Ongoing",
-            "project_category": "roads and highways",
-            "start_date": "2017-02-20",
-            "end_date": "2017-02-20",
-            "completeness": "20",
-            "project_location": "Tema",
-            "regions": "Greater Accra",
-            "sub_metro": "Ayawaso East Sub Metro",
-            "position": "5.9657536710655235,-0.703125",
-            "project_image": "http://localhost:8000/media/images/Screenshot_from_2016-01-26_195933_dq4G1DT.jpg",
-            "projectImages": [],
-            "count_likes": 1,
-            "published_date": null,
-            "modified": "2017-02-20T19:02:16.256789Z"
           }
+        
         ]
       }
 
@@ -251,8 +201,8 @@
     }
 
 
-### Favourite a project
-`Endpoint: POST https://api.example.org/api/v1.0/project-images/`
+### Get all images for all projects
+`Endpoint: GET https://api.example.org/api/v1.0/project-images/`
 
  ``Response: 201 Created``
 

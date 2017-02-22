@@ -1,4 +1,3 @@
-### Report case
 ### Create a case
 
 `Endpoint: POST https://api.example.org/api/v1.0/project-case/create-case/`

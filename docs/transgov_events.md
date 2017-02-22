@@ -1,6 +1,6 @@
 ### Get all events
 
-`Endpoint: POST https://api.example.org/api/v1.0/events/`
+`Endpoint: GET https://api.example.org/api/v1.0/events/`
 
  ``Response: 200 ok``
 

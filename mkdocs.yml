@@ -1,4 +1,4 @@
-site_name: Transgov ghana api documentation
+site_name: Transgov Ghana api documentation
 pages:
     - Home: index.md
     - Account_registration: account_registration.md
