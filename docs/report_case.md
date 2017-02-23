@@ -229,59 +229,6 @@
           "count_gravity": 0,
           "created_date": "2017-02-06T18:52:04.272207Z",
           "case_images": []
-        },
-        {
-          "id": 6,
-          "case_number": "076ABF9C2A",
-          "case_category": {
-            "id": 1,
-            "category_name": "Electricity",
-            "description": "This is information about electricity",
-            "author": 1
-          },
-          "case_name": "Electric Problem Edited",
-          "case_description": "This a case about a spilling pipe in my hood working",
-          "case_image": "http://localhost:8000/media/images/vlcsnap-2015-08-28-20h54m02s198_b4WBJNp.jpg",
-          "case_status": "pending",
-          "location": "Ablekuma North Sub Metro",
-          "author": 1,
-          "gravity": false,
-          "count_gravity": 0,
-          "created_date": "2017-02-06T21:00:21.810506Z",
-          "case_images": [
-            {
-              "id": 14,
-              "case_images": "http://localhost:8000/media/images/vvvvvv_aSSrKIH.jpg"
-            },
-            {
-              "id": 13,
-              "case_images": "http://localhost:8000/media/images/vvvvvv_3YkiZck.jpg"
-            },
-            {
-              "id": 12,
-              "case_images": "http://localhost:8000/media/images/vvvvvv_eVJrm9F.jpg"
-            }
-          ]
-        },
-        {
-          "id": 7,
-          "case_number": "ECEFC3C994",
-          "case_category": {
-            "id": 1,
-            "category_name": "Electricity",
-            "description": "This is information about electricity",
-            "author": 1
-          },
-          "case_name": "New case with Email sending",
-          "case_description": "This a case about a spilling pipe in my hood working",
-          "case_image": "http://localhost:8000/media/images/vlcsnap-2015-08-28-20h54m02s198_1avGDJV.jpg",
-          "case_status": "pending",
-          "location": "Ablekuma North Sub Metro",
-          "author": 1,
-          "gravity": false,
-          "count_gravity": 0,
-          "created_date": "2017-02-07T16:45:40.347612Z",
-          "case_images": []
         }
       ]
     }
@@ -409,67 +356,8 @@
           "count_gravity": 0,
           "created_date": "2017-02-07T16:45:40.347612Z",
           "case_images": []
-        },
-        {
-          "id": 10,
-          "case_number": "0874C9AC1F",
-          "case_category": {
-            "id": 1,
-            "category_name": "Electricity",
-            "description": "This is information about electricity",
-            "author": 1
-          },
-          "case_name": "New case with Email sending 2",
-          "case_description": "This a case about a spilling pipe in my hood working",
-          "case_image": "/media/images/vlcsnap-2015-08-28-20h54m02s198_og367yj.jpg",
-          "case_status": "pending",
-          "location": "Ablekuma North Sub Metro",
-          "author": 1,
-          "gravity": false,
-          "count_gravity": 0,
-          "created_date": "2017-02-07T21:29:56.620447Z",
-          "case_images": []
-        },
-        {
-          "id": 11,
-          "case_number": "CC245B8C06",
-          "case_category": {
-            "id": 2,
-            "category_name": "Water",
-            "description": "This in information about water works",
-            "author": 1
-          },
-          "case_name": "User created this case",
-          "case_description": "This is to test if it would separate user",
-          "case_image": "/media/images/vvvvvv_CuW36e6.jpg",
-          "case_status": "pending",
-          "location": "Ablekuma North Sub Metro",
-          "author": 2,
-          "gravity": false,
-          "count_gravity": 0,
-          "created_date": "2017-02-07T22:18:37.582209Z",
-          "case_images": []
-        },
-        {
-          "id": 12,
-          "case_number": "8077E2E87B",
-          "case_category": {
-            "id": 2,
-            "category_name": "Water",
-            "description": "This in information about water works",
-            "author": 1
-          },
-          "case_name": "Another case by user",
-          "case_description": "This is to test if it would separate user again",
-          "case_image": "/media/images/vvvvvv_bqyNZ40.jpg",
-          "case_status": "pending",
-          "location": "Ablekuma North Sub Metro",
-          "author": 1,
-          "gravity": false,
-          "count_gravity": 0,
-          "created_date": "2017-02-08T21:54:15.866828Z",
-          "case_images": []
         }
+        
       ]
 
 
