@@ -92,9 +92,6 @@
                 <li class="toctree-l3"><a href="#update-a-case">Update a case</a></li>
                 
             
-                <li class="toctree-l3"><a href="#add-images-to-a-case">Add images to a case</a></li>
-                
-            
                 <li class="toctree-l3"><a href="#add-gravity-to-project-this-is-to-show-how-seriouse-reported-the-case-is">Add gravity to project (This is to show how seriouse reported the case is)</a></li>
                 
             
@@ -246,7 +243,9 @@
   },
   "case_name": "Another case by user",
   "case_description": "This is to test if it would separate user again",
-  "case_image": "/media/images/about-1-pict.jpg",
+  "case_image_one": "/media/images/about-1-pict.jpg",
+  "case_image_two": "/media/images/about-2-pict.jpg",
+  "case_image_three": "/media/images/about-3-pict.jpg",
   "case_status": "fixing",
   "location": "Ablekuma North Sub Metro",
   "author": 2,
@@ -255,19 +254,25 @@
   "created_date": "2017-02-21T16:21:22.661830Z"
 }
 </code></pre>
-<h3 id="add-images-to-a-case">Add images to a case</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/{pk}/add-images/</code></p>
-<p><code>Request: [JSON Body]</code></p>
-<pre><code>{
-"case_images": "/media/images/about-1-pict.jpg",
-}
-</code></pre>
-<p><code>Response: 201 Created</code></p>
-<pre><code>{
-"id": 1,
-"case_images": "/media/images/about-1-pict.jpg",
-}
-</code></pre>
+<!-- 
+### Add images to a case
+
+`Endpoint: POST https://api.example.org/api/v1.0/project-case/{pk}/add-images/`
+
+  ``Request: [JSON Body]``
+
+    {
+    "case_images": "/media/images/about-1-pict.jpg",
+    }
+
+  `Response: 201 Created`
+
+    {
+    "id": 1,
+    "case_images": "/media/images/about-1-pict.jpg",
+    }
+ -->
+
 <h3 id="add-gravity-to-project-this-is-to-show-how-seriouse-reported-the-case-is">Add gravity to project (This is to show how seriouse reported the case is)</h3>
 <p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/{pk}/add-gravity/</code></p>
 <p><code>Response: 201 Created</code></p>
