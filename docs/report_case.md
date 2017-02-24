@@ -99,7 +99,9 @@
       },
       "case_name": "Another case by user",
       "case_description": "This is to test if it would separate user again",
-      "case_image": "/media/images/about-1-pict.jpg",
+      "case_image_one": "/media/images/about-1-pict.jpg",
+      "case_image_two": "/media/images/about-2-pict.jpg",
+      "case_image_three": "/media/images/about-3-pict.jpg",
       "case_status": "fixing",
       "location": "Ablekuma North Sub Metro",
       "author": 2,
@@ -108,7 +110,7 @@
       "created_date": "2017-02-21T16:21:22.661830Z"
     }
 
-
+<!-- 
 ### Add images to a case
 
 `Endpoint: POST https://api.example.org/api/v1.0/project-case/{pk}/add-images/`
@@ -125,7 +127,7 @@
     "id": 1,
     "case_images": "/media/images/about-1-pict.jpg",
     }
-
+ -->
 ### Add gravity to project (This is to show how seriouse reported the case is)
 
 `Endpoint: POST https://api.example.org/api/v1.0/project-case/{pk}/add-gravity/`
