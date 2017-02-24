@@ -9,12 +9,14 @@
         "id": 1,
         "category_name": "Electricity",
         "description": "This is information about electricity",
+        "category_image": "/media/images/category_image.jpg",
         "author": 1
       },
       {
         "id": 2,
         "category_name": "Water",
         "description": "This in information about water works",
+        "category_image": "/media/images/category_image.jpg",
         "author": 1
       }
     ]
@@ -30,7 +32,9 @@
     "category_name": "Water",
     "case_name": "Another case by user",
     "case_description": "This is to test if it would separate user again",
-    "case_image": "/media/images/about-1-pict.jpg",
+    "case_image_one": "/media/images/about-1-pict.jpg",
+    "case_image_two": "/media/images/about-2-pict.jpg",
+    "case_image_three": "/media/images/about-3-pict.jpg",
     "case_status": "fixing",
     "location": "Ablekuma North Sub Metro"
 
@@ -45,18 +49,20 @@
         "id": 2,
         "category_name": "Water",
         "description": "This in information about water works",
+        "category_image": "/media/images/category_image.jpg",
         "author": 1
       },
       "case_name": "Another case by user",
       "case_description": "This is to test if it would separate user again",
-      "case_image": "/media/images/about-1-pict.jpg",
+      "case_image_one": "/media/images/about-1-pict.jpg",
+      "case_image_two": "/media/images/about-2-pict.jpg",
+      "case_image_three": "/media/images/about-3-pict.jpg",
       "case_status": "fixing",
       "location": "Ablekuma North Sub Metro",
       "author": 2,
       "gravity": false,
       "count_gravity": 0,
-      "created_date": "2017-02-21T16:21:22.661830Z",
-      "case_images": []
+      "created_date": "2017-02-21T16:21:22.661830Z"
     }
 
 
@@ -71,7 +77,9 @@
     "category_name": "Water",
     "case_name": "Another case by user",
     "case_description": "This is to test if it would separate user again",
-    "case_image": "/media/images/about-1-pict.jpg",
+    "case_image_one": "/media/images/about-1-pict.jpg",
+    "case_image_two": "/media/images/about-2-pict.jpg",
+    "case_image_three": "/media/images/about-3-pict.jpg",
     "case_status": "fixing",
     "location": "Ablekuma North Sub Metro"
 
@@ -86,6 +94,7 @@
         "id": 2,
         "category_name": "Water",
         "description": "This in information about water works",
+        "category_image": "/media/images/category_image.jpg",
         "author": 1
       },
       "case_name": "Another case by user",
@@ -96,8 +105,7 @@
       "author": 2,
       "gravity": false,
       "count_gravity": 0,
-      "created_date": "2017-02-21T16:21:22.661830Z",
-      "case_images": []
+      "created_date": "2017-02-21T16:21:22.661830Z"
     }
 
 
