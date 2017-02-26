@@ -1,5 +1,7 @@
+### Overview
+This is where a user can report or post any incident in his area, being it water spillage, public toilet spillage etc. The post is done by category. This page shows how a user can do the posting via mobile app
 ### Get all Case categories
-- Method `POST`
+- Method: `GET`
 
 - Endpoint: `https://api.example.org/api/v1.0/case-category`
 
@@ -23,7 +25,7 @@
         ]
 
 ### Create a case
-- Method `POST`
+- Method:`POST`
 
 - Endpoint: `https://api.example.org/api/v1.0/project-case/create-case/`
 
@@ -74,9 +76,9 @@
 
 ### Update a case
 
-- Method `POST`
+- Method: `POST`
 
-- Endpoint: `https://api.example.org/api/v1.0/project-case/update-case/`
+- Endpoint: `https://api.example.org/api/v1.0/project-case/{xx}/update-case/`
 
 - User Authorization: ``Required`` 
 
@@ -141,7 +143,7 @@
     }
  -->
 ### Add gravity to project (This is to show how seriouse reported the case is)
-- Method `POST`
+- Method: `POST`
 
 - Endpoint:  `https://api.example.org/api/v1.0/project-case/{pk}/add-gravity/`
 
