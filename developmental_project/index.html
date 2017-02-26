@@ -92,6 +92,13 @@
           
             <li>
     <li class="toctree-l1 ">
+        <a class="" href="../transgov_events/">Events</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
         <a class="" href="../report_case/">Report_case</a>
         
     </li>
@@ -99,7 +106,7 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../transgov_events/">Events</a>
+        <a class="" href="../update_profile/">Update_profile</a>
         
     </li>
 <li>
@@ -137,8 +144,15 @@
             <div class="section">
               
                 <h3 id="get-all-projects">Get All projects</h3>
-<p><code>Endpoint: GET https://api.example.org/api/v1.0/all-projects/</code></p>
-<p><code>Response: 200 ok</code></p>
+<ul>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/all-projects/</code></p>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
 <pre><code>[
   {
     "id": 1,
@@ -227,50 +241,81 @@
 
 ]
 </code></pre>
+</li>
+</ul>
 <h3 id="favourite-a-project">Favourite a project</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/all-projects/{pk}/like/</code></p>
-<p><code>Response: 201 Created</code></p>
+<ul>
+<li>
+<p>Method: <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/all-projects/{pk}/like/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
 <pre><code> {
   "likes": 1,
   "success": true
-}
+ }
 </code></pre>
+</li>
+</ul>
 <h3 id="get-all-images-for-all-projects">Get all images for all projects</h3>
-<p><code>Endpoint: GET https://api.example.org/api/v1.0/project-images/</code></p>
-<p><code>Response: 201 Created</code></p>
-<pre><code>     [
-      {
-        "id": 1,
-        "project": 1,
-        "additional_project_images": "http://localhost:8000/media/images/vvvvvv_yOEl0Vf.jpg"
-      },
-      {
-        "id": 2,
-        "project": 1,
-        "additional_project_images": "http://localhost:8000/media/images/simple-chord-chart-opt_uhDtnGv.jpg"
-      },
-      {
-        "id": 3,
-        "project": 1,
-        "additional_project_images": "http://localhost:8000/media/images/Screenshot_from_2015-10-08_165251_QY8fx5g.jpg"
-      },
-      {
-        "id": 4,
-        "project": 2,
-        "additional_project_images": "http://localhost:8000/media/images/vvvvvv_erNxPWM.jpg"
-      },
-      {
-        "id": 5,
-        "project": 2,
-        "additional_project_images": "http://localhost:8000/media/images/Screenshot_from_2016-03-06_135734.jpg"
-      },
-      {
-        "id": 6,
-        "project": 2,
-        "additional_project_images": "http://localhost:8000/media/images/simple-chord-chart-opt_YcCsGCL.jpg"
-      }
-    ]
+<ul>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-images/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
 </code></pre>
+<ul>
+<li>
+<p>Response: <code>201 Created</code></p>
+<p>[
+  {
+    "id": 1,
+    "project": 1,
+    "additional_project_images": "http://localhost:8000/media/images/vvvvvv_yOEl0Vf.jpg"
+  },
+  {
+    "id": 2,
+    "project": 1,
+    "additional_project_images": "http://localhost:8000/media/images/simple-chord-chart-opt_uhDtnGv.jpg"
+  },
+  {
+    "id": 3,
+    "project": 1,
+    "additional_project_images": "http://localhost:8000/media/images/Screenshot_from_2015-10-08_165251_QY8fx5g.jpg"
+  },
+  {
+    "id": 4,
+    "project": 2,
+    "additional_project_images": "http://localhost:8000/media/images/vvvvvv_erNxPWM.jpg"
+  },
+  {
+    "id": 5,
+    "project": 2,
+    "additional_project_images": "http://localhost:8000/media/images/Screenshot_from_2016-03-06_135734.jpg"
+  },
+  {
+    "id": 6,
+    "project": 2,
+    "additional_project_images": "http://localhost:8000/media/images/simple-chord-chart-opt_YcCsGCL.jpg"
+  }
+]</p>
+</li>
+</ul>
+</li>
+</ul>
               
             </div>
           </div>

@@ -78,6 +78,13 @@
 <li>
           
             <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../transgov_events/">Events</a>
+        
+    </li>
+<li>
+          
+            <li>
     <li class="toctree-l1 current">
         <a class="current" href="./">Report_case</a>
         
@@ -98,16 +105,16 @@
                 <li class="toctree-l3"><a href="#get-all-cases-paginated">Get all cases (paginated)</a></li>
                 
             
-                <li class="toctree-l3"><a href="#get-all-cases-a-user-has-reported">Get all cases a user has reported</a></li>
+                <li class="toctree-l3"><a href="#get-all-cases-a-user-has-reported-my-cases">Get all cases a user has reported (my cases)</a></li>
                 
             
-                <li class="toctree-l3"><a href="#get-all-reported-cases-but-pending">Get all reported cases but Pending</a></li>
+                <li class="toctree-l3"><a href="#get-all-reported-cases-but-pending-pending-cases">Get all reported cases but Pending (pending cases)</a></li>
                 
             
-                <li class="toctree-l3"><a href="#get-all-reported-cases-and-being-fixed-by-duty-bearers">Get all reported cases and being fixed by duty bearers</a></li>
+                <li class="toctree-l3"><a href="#get-all-reported-cases-and-being-fixed-by-duty-bearers-fixing-cases">Get all reported cases and being fixed by duty bearers (fixing cases)</a></li>
                 
             
-                <li class="toctree-l3"><a href="#get-all-fixed-cases">Get all fixed cases</a></li>
+                <li class="toctree-l3"><a href="#get-all-fixed-cases-fixed-cases">Get all fixed cases (fixed cases)</a></li>
                 
             
             </ul>
@@ -117,7 +124,7 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../transgov_events/">Events</a>
+        <a class="" href="../update_profile/">Update_profile</a>
         
     </li>
 <li>
@@ -155,8 +162,15 @@
             <div class="section">
               
                 <h3 id="get-all-case-categories">Get all Case categories</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/case-category</code></p>
-<p><code>Response: 201 Created</code></p>
+<ul>
+<li>
+<p>Method <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/case-category</code></p>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
 <pre><code>[
   {
     "id": 1,
@@ -174,9 +188,23 @@
   }
 ]
 </code></pre>
+</li>
+</ul>
 <h3 id="create-a-case">Create a case</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/create-case/</code></p>
-<p><code>Request: [JSON Body]</code></p>
+<ul>
+<li>
+<p>Method <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/create-case/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Request: <code>[JSON Body]</code></p>
 <pre><code>{
 
 "category_name": "Water",
@@ -190,11 +218,13 @@
 
 }
 </code></pre>
-<p><code>Response: 201 Created</code></p>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
 <pre><code>  {
-  "id": 13,
-  "case_number": "9BCA763349",
-  "case_category": {
+    "id": 13,
+    "case_number": "9BCA763349",
+    "case_category": {
     "id": 2,
     "category_name": "Water",
     "description": "This in information about water works",
@@ -212,11 +242,25 @@
   "gravity": false,
   "count_gravity": 0,
   "created_date": "2017-02-21T16:21:22.661830Z"
-}
+  }
 </code></pre>
+</li>
+</ul>
 <h3 id="update-a-case">Update a case</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/update-case/</code></p>
-<p><code>Request: [JSON Body]</code></p>
+<ul>
+<li>
+<p>Method <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/update-case/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Request: <code>[JSON Body]</code></p>
 <pre><code>{
 
 "category_name": "Water",
@@ -230,11 +274,13 @@
 
 }
 </code></pre>
-<p><code>Response: 201 Created</code></p>
-<pre><code>  {
-  "id": 13,
-  "case_number": "9BCA763349",
-  "case_category": {
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
+<pre><code>{
+    "id": 13,
+    "case_number": "9BCA763349",
+    "case_category": {
     "id": 2,
     "category_name": "Water",
     "description": "This in information about water works",
@@ -254,6 +300,8 @@
   "created_date": "2017-02-21T16:21:22.661830Z"
 }
 </code></pre>
+</li>
+</ul>
 <!-- 
 ### Add images to a case
 
@@ -274,12 +322,24 @@
  -->
 
 <h3 id="add-gravity-to-project-this-is-to-show-how-seriouse-reported-the-case-is">Add gravity to project (This is to show how seriouse reported the case is)</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/{pk}/add-gravity/</code></p>
-<p><code>Response: 201 Created</code></p>
-<pre><code> {
-"id": 13,
-"case_number": "9BCA763349",
-"case_category": {
+<ul>
+<li>
+<p>Method <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint:  <code>https://api.example.org/api/v1.0/project-case/{pk}/add-gravity/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
+<pre><code>{
+  "id": 13,
+  "case_number": "9BCA763349",
+  "case_category": {
   "id": 2,
   "category_name": "Water",
   "description": "This in information about water works",
@@ -310,9 +370,18 @@
   ]
 }
 </code></pre>
+</li>
+</ul>
 <h3 id="get-all-cases-paginated">Get all cases (paginated)</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/</code></p>
-<p><code>Response: 200 ok</code></p>
+<ul>
+<li>
+<p>Method: <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint:  <code>https://api.example.org/api/v1.0/project-case/</code></p>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
 <pre><code>{
   "count": 13,
   "next": "http://localhost:8000/api/v1.0/project-case/?page=2",
@@ -381,9 +450,23 @@
   ]
 }
 </code></pre>
-<h3 id="get-all-cases-a-user-has-reported">Get all cases a user has reported</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/my-cases/</code></p>
-<p><code>Response: 200 ok</code></p>
+</li>
+</ul>
+<h3 id="get-all-cases-a-user-has-reported-my-cases">Get all cases a user has reported (my cases)</h3>
+<ul>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/my-cases/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
 <pre><code>[
   {
     "id": 11,
@@ -440,69 +523,91 @@
   }
 ]
 </code></pre>
-<h3 id="get-all-reported-cases-but-pending">Get all reported cases but Pending</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/my-cases/</code></p>
-<p><code>Response: 200 ok</code></p>
-<pre><code>  [
-    {
-      "id": 6,
-      "case_number": "076ABF9C2A",
-      "case_category": {
-        "id": 1,
-        "category_name": "Electricity",
-        "description": "This is information about electricity",
-        "author": 1
-      },
-      "case_name": "Electric Problem Edited",
-      "case_description": "This a case about a spilling pipe in my hood working",
-      "case_image": "/media/images/vlcsnap-2015-08-28-20h54m02s198_b4WBJNp.jpg",
-      "case_status": "pending",
-      "location": "Ablekuma North Sub Metro",
-      "author": 1,
-      "gravity": false,
-      "count_gravity": 0,
-      "created_date": "2017-02-06T21:00:21.810506Z",
-      "case_images": [
-        {
-          "id": 14,
-          "case_images": "/media/images/vvvvvv_aSSrKIH.jpg"
-        },
-        {
-          "id": 13,
-          "case_images": "/media/images/vvvvvv_3YkiZck.jpg"
-        },
-        {
-          "id": 12,
-          "case_images": "/media/images/vvvvvv_eVJrm9F.jpg"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "case_number": "ECEFC3C994",
-      "case_category": {
-        "id": 1,
-        "category_name": "Electricity",
-        "description": "This is information about electricity",
-        "author": 1
-      },
-      "case_name": "New case with Email sending",
-      "case_description": "This a case about a spilling pipe in my hood working",
-      "case_image": "/media/images/vlcsnap-2015-08-28-20h54m02s198_1avGDJV.jpg",
-      "case_status": "pending",
-      "location": "Ablekuma North Sub Metro",
-      "author": 1,
-      "gravity": false,
-      "count_gravity": 0,
-      "created_date": "2017-02-07T16:45:40.347612Z",
-      "case_images": []
-    }
-
-  ]
+</li>
+</ul>
+<h3 id="get-all-reported-cases-but-pending-pending-cases">Get all reported cases but Pending (pending cases)</h3>
+<ul>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/pending-cases/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
 </code></pre>
-<h3 id="get-all-reported-cases-and-being-fixed-by-duty-bearers">Get all reported cases and being fixed by duty bearers</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/my-cases/</code></p>
-<p><code>Response: 200 ok</code></p>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
+<pre><code>[
+  {
+    "id": 6,
+    "case_number": "076ABF9C2A",
+    "case_category": {
+      "id": 1,
+      "category_name": "Electricity",
+      "description": "This is information about electricity",
+      "author": 1
+    },
+    "case_name": "Electric Problem Edited",
+    "case_description": "This a case about a spilling pipe in my hood working",
+    "case_image": "/media/images/vlcsnap-2015-08-28-20h54m02s198_b4WBJNp.jpg",
+    "case_status": "pending",
+    "location": "Ablekuma North Sub Metro",
+    "author": 1,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-02-06T21:00:21.810506Z",
+    "case_images": [
+      {
+        "id": 14,
+        "case_images": "/media/images/vvvvvv_aSSrKIH.jpg"
+      },
+      {
+        "id": 13,
+        "case_images": "/media/images/vvvvvv_3YkiZck.jpg"
+      },
+      {
+        "id": 12,
+        "case_images": "/media/images/vvvvvv_eVJrm9F.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "case_number": "ECEFC3C994",
+    "case_category": {
+      "id": 1,
+      "category_name": "Electricity",
+      "description": "This is information about electricity",
+      "author": 1
+    },
+    "case_name": "New case with Email sending",
+    "case_description": "This a case about a spilling pipe in my hood working",
+    "case_image": "/media/images/vlcsnap-2015-08-28-20h54m02s198_1avGDJV.jpg",
+    "case_status": "pending",
+    "location": "Ablekuma North Sub Metro",
+    "author": 1,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-02-07T16:45:40.347612Z",
+    "case_images": []
+  }
+]
+</code></pre>
+</li>
+</ul>
+<h3 id="get-all-reported-cases-and-being-fixed-by-duty-bearers-fixing-cases">Get all reported cases and being fixed by duty bearers (fixing cases)</h3>
+<ul>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint:  <code>https://api.example.org/api/v1.0/project-case/fixing-cases/</code></p>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
 <pre><code>[
   {
     "id": 9,
@@ -599,10 +704,19 @@
   }
 ]
 </code></pre>
-<h3 id="get-all-fixed-cases">Get all fixed cases</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/project-case/my-cases/</code></p>
-<p><code>Response: 200 ok</code></p>
-<pre><code> [
+</li>
+</ul>
+<h3 id="get-all-fixed-cases-fixed-cases">Get all fixed cases (fixed cases)</h3>
+<ul>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/fixed-cases/</code></p>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
+<pre><code>[
   {
     "id": 1,
     "case_number": "CABBC28380",
@@ -625,6 +739,8 @@
   }
 ]
 </code></pre>
+</li>
+</ul>
               
             </div>
           </div>
@@ -632,10 +748,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../transgov_events/" class="btn btn-neutral float-right" title="Events"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../update_profile/" class="btn btn-neutral float-right" title="Update_profile"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../developmental_project_v2.0/" class="btn btn-neutral" title="Developmental_Project_v2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../transgov_events/" class="btn btn-neutral" title="Events"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -661,10 +777,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../developmental_project_v2.0/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../transgov_events/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../transgov_events/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../update_profile/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
