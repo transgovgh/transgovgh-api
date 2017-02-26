@@ -68,9 +68,6 @@
                 <li class="toctree-l3"><a href="#account-login">Account login</a></li>
                 
             
-                <li class="toctree-l3"><a href="#update-profile">Update Profile</a></li>
-                
-            
             </ul>
         
     </li>
@@ -92,6 +89,13 @@
           
             <li>
     <li class="toctree-l1 ">
+        <a class="" href="../transgov_events/">Events</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
         <a class="" href="../report_case/">Report_case</a>
         
     </li>
@@ -99,7 +103,7 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../transgov_events/">Events</a>
+        <a class="" href="../update_profile/">Update_profile</a>
         
     </li>
 <li>
@@ -137,62 +141,56 @@
             <div class="section">
               
                 <h3 id="account-signup">Account signup</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/users/signup/</code></p>
-<p><code>Request: [JSON Body]</code></p>
+<ul>
+<li>Method: <code>POST</code></li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/users/signup/</code></p>
+</li>
+<li>
+<p>Request: <code>[JSON Body]</code></p>
 <pre><code>{
 "email": "user@user.com",
 "username": "username",
 "password": "xxxxxxxx"
 }
 </code></pre>
-<p><code>Response: 201 Created</code></p>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
 <pre><code>{
 "email": "user@user.com",
 "username": "username",
 "token": "xxxxxxxxxxxxxxxxxxxxxx"
 }
 </code></pre>
+</li>
+</ul>
 <h3 id="account-login">Account login</h3>
-<p><code>Endpoint: POST https://api.example.org/api/v1.0/users/login/</code></p>
-<p><code>Request: [JSON Body]</code></p>
+<ul>
+<li>
+<p>Method: <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/users/login/</code></p>
+</li>
+<li>
+<p>Request: <code>[JSON Body]</code></p>
 <pre><code>{
 "username": "username",
 "password": "xxxxxxxx"
 }
 </code></pre>
-<p><code>Response: 201 Created</code></p>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
 <pre><code>{
 "email": "user@user.com",
 "username": "username",
 "token": "xxxxxxxxxxxxxxxxxx"
 }
 </code></pre>
-<h3 id="update-profile">Update Profile</h3>
-<p><code>Endpoint: POST https://api.example.org/v1.0/users/{pk}/update-profile/</code></p>
-<p><code>Request: [JSON Body]</code></p>
-<pre><code>{
-"first_name":"Kelvin",
-"last_name": "Anyinatoe",
-"location": "Abeka",
-"phone_number": "0246424340"
-}
-</code></pre>
-<p><code>Response: 201 Created</code></p>
-<pre><code>{
-  "id": 2,
-  "auth_token": "687a95d0bcefcec5278820fd6939e8d4291a372a",
-  "email": "user@user.com",
-  "username": "user",
-  "first_name": "Kelvin",
-  "last_name": "Anyinatoe",
-  "profile": {
-    "id": 2,
-    "location": "Abeka",
-    "phone_number": 246424340,
-    "fcm_id": ""
-  }
-}
-</code></pre>
+</li>
+</ul>
               
             </div>
           </div>
