@@ -4,6 +4,8 @@ pages:
     - Account_registration: account_registration.md
     - Developmental_Project: developmental_project.md
     - Developmental_Project_v2: developmental_project_v2.0.md
-    - Report_case: report_case.md
     - Events: transgov_events.md
+    - Report_case: report_case.md
+    - Update_profile: update_profile.md
+
 theme: readthedocs

@@ -1,71 +1,46 @@
 ### Account signup
-`Endpoint: POST https://api.example.org/api/v1.0/users/signup/`
+- Method: `POST`
+- Endpoint: `https://api.example.org/api/v1.0/users/signup/`
   
-  ``Request: [JSON Body]``
+- Request: ``[JSON Body]``
 
-    {
-    "email": "user@user.com",
-    "username": "username",
-    "password": "xxxxxxxx"
-    }
+        {
+        "email": "user@user.com",
+        "username": "username",
+        "password": "xxxxxxxx"
+        }
   
-  ``Response: 201 Created``
+  - Response: ``201 Created``
 
-    {
-    "email": "user@user.com",
-    "username": "username",
-    "token": "xxxxxxxxxxxxxxxxxxxxxx"
-    }
+
+        {
+        "email": "user@user.com",
+        "username": "username",
+        "token": "xxxxxxxxxxxxxxxxxxxxxx"
+        }
 
 
 ### Account login
-`Endpoint: POST https://api.example.org/api/v1.0/users/login/`
+  - Method: `POST`
+
+  - Endpoint: `https://api.example.org/api/v1.0/users/login/`
   
-  ``Request: [JSON Body]``
+  - Request: ``[JSON Body]``
 
-    {
-    "username": "username",
-    "password": "xxxxxxxx"
-    }
+        {
+        "username": "username",
+        "password": "xxxxxxxx"
+        }
   
-  ``Response: 201 Created``
+  - Response: ``201 Created``
 
-    {
-    "email": "user@user.com",
-    "username": "username",
-    "token": "xxxxxxxxxxxxxxxxxx"
-    }
-
-
-### Update Profile
-`Endpoint: POST https://api.example.org/v1.0/users/{pk}/update-profile/`
-  
-  ``Request: [JSON Body]``
-
-    {
-    "first_name":"Kelvin",
-    "last_name": "Anyinatoe",
-    "location": "Abeka",
-    "phone_number": "0246424340"
-    }
+        {
+        "email": "user@user.com",
+        "username": "username",
+        "token": "xxxxxxxxxxxxxxxxxx"
+        }
 
 
-  ``Response: 201 Created``
-    
-    {
-      "id": 2,
-      "auth_token": "687a95d0bcefcec5278820fd6939e8d4291a372a",
-      "email": "user@user.com",
-      "username": "user",
-      "first_name": "Kelvin",
-      "last_name": "Anyinatoe",
-      "profile": {
-        "id": 2,
-        "location": "Abeka",
-        "phone_number": 246424340,
-        "fcm_id": ""
-      }
-    }
 
 
 

@@ -1,9 +1,11 @@
 ### Get All projects  with pagination (Version 2.0)
-`Endpoint: GET https://api.example.org/api/v2.0/all-projects/`
+- Method `GET`
 
- ``Response: 200 ok``
+- Endpoint: `https://api.example.org/api/v2.0/all-projects/`
 
-       {
+ - Response: ``200 ok``
+
+        {
         "count": 3,
         "next": null,
         "previous": null,
