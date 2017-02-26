@@ -90,6 +90,9 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#overview">Overview</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#get-all-case-categories">Get all Case categories</a></li>
                 
             
@@ -161,10 +164,12 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="get-all-case-categories">Get all Case categories</h3>
+                <h3 id="overview">Overview</h3>
+<p>This is where a user can report or post any incident in his area, being it water spillage, public toilet spillage etc. The post is done by category. This page shows how a user can do the posting via mobile app</p>
+<h3 id="get-all-case-categories">Get all Case categories</h3>
 <ul>
 <li>
-<p>Method <code>POST</code></p>
+<p>Method: <code>GET</code></p>
 </li>
 <li>
 <p>Endpoint: <code>https://api.example.org/api/v1.0/case-category</code></p>
@@ -193,7 +198,7 @@
 <h3 id="create-a-case">Create a case</h3>
 <ul>
 <li>
-<p>Method <code>POST</code></p>
+<p>Method:<code>POST</code></p>
 </li>
 <li>
 <p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/create-case/</code></p>
@@ -249,10 +254,10 @@
 <h3 id="update-a-case">Update a case</h3>
 <ul>
 <li>
-<p>Method <code>POST</code></p>
+<p>Method: <code>POST</code></p>
 </li>
 <li>
-<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/update-case/</code></p>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/{xx}/update-case/</code></p>
 </li>
 <li>
 <p>User Authorization: <code>Required</code> </p>
@@ -324,7 +329,7 @@
 <h3 id="add-gravity-to-project-this-is-to-show-how-seriouse-reported-the-case-is">Add gravity to project (This is to show how seriouse reported the case is)</h3>
 <ul>
 <li>
-<p>Method <code>POST</code></p>
+<p>Method: <code>POST</code></p>
 </li>
 <li>
 <p>Endpoint:  <code>https://api.example.org/api/v1.0/project-case/{pk}/add-gravity/</code></p>

@@ -142,7 +142,9 @@ This is where a user can report or post any incident in his area, being it water
     "case_images": "/media/images/about-1-pict.jpg",
     }
  -->
-### Add gravity to project (This is to show how seriouse reported the case is)
+### Add gravity to project 
+This is to show how serious reported the case is
+
 - Method: `POST`
 
 - Endpoint:  `https://api.example.org/api/v1.0/project-case/{pk}/add-gravity/`
@@ -188,7 +190,8 @@ This is where a user can report or post any incident in his area, being it water
         }
 
 
-### Get all cases (paginated)
+### Get all cases 
+The project results on this page are paginated
 - Method: `POST`
 
 - Endpoint:  `https://api.example.org/api/v1.0/project-case/`
@@ -265,7 +268,8 @@ This is where a user can report or post any incident in his area, being it water
 
 
 
-### Get all cases a user has reported (my cases)
+### Get all cases a user has reported 
+(my cases)
 - Method: `GET`
 
 - Endpoint: `https://api.example.org/api/v1.0/project-case/my-cases/`
@@ -332,7 +336,8 @@ This is where a user can report or post any incident in his area, being it water
           }
         ]
 
-### Get all reported cases but Pending (pending cases)
+### Get all reported cases but Pending 
+(pending cases)
 - Method: `GET`
 
 - Endpoint: `https://api.example.org/api/v1.0/project-case/pending-cases/`
@@ -400,7 +405,8 @@ This is where a user can report or post any incident in his area, being it water
         ]
 
 
-### Get all reported cases and being fixed by duty bearers (fixing cases)
+### Get all reported cases and being fixed by duty bearers 
+(fixing cases)
 - Method: `GET`
 
 - Endpoint:  `https://api.example.org/api/v1.0/project-case/fixing-cases/`
@@ -504,7 +510,8 @@ This is where a user can report or post any incident in his area, being it water
         ]
 
 
-### Get all fixed cases (fixed cases)
+### Get all fixed cases 
+(fixed cases)
 - Method: `GET`
 
 - Endpoint: `https://api.example.org/api/v1.0/project-case/fixed-cases/`
