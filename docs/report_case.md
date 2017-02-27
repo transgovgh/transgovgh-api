@@ -36,16 +36,14 @@ This is where a user can report or post any incident in his area, being it water
   - Request: ``[JSON Body]``
 
         {
-
-        "category_name": "Water",
+        "case_category": 2,
         "case_name": "Another case by user",
         "case_description": "This is to test if it would separate user again",
-        "case_image_one": "/media/images/about-1-pict.jpg",
-        "case_image_two": "/media/images/about-2-pict.jpg",
-        "case_image_three": "/media/images/about-3-pict.jpg",
+        "case_image_one": "/home/eit/Pictures/test.jpg",
+        "case_image_two": "/home/eit/Pictures/test.jpg",
+        "case_image_three": "/home/eit/Pictures/test.jpg",
         "case_status": "fixing",
         "location": "Ablekuma North Sub Metro"
-
         }
 
   - Response: ``201 Created``
@@ -87,16 +85,14 @@ This is where a user can report or post any incident in his area, being it water
   - Request: ``[JSON Body]``
 
         {
-
-        "category_name": "Water",
+        "case_category": 2,
         "case_name": "Another case by user",
         "case_description": "This is to test if it would separate user again",
-        "case_image_one": "/media/images/about-1-pict.jpg",
-        "case_image_two": "/media/images/about-2-pict.jpg",
-        "case_image_three": "/media/images/about-3-pict.jpg",
+        "case_image_one": "/home/eit/Pictures/test.jpg",
+        "case_image_two": "/home/eit/Pictures/test.jpg",
+        "case_image_three": "/home/eit/Pictures/test.jpg",
         "case_status": "fixing",
         "location": "Ablekuma North Sub Metro"
-
         }
 
   - Response: ``201 Created``
