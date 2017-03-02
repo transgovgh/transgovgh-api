@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Events - Transgov Ghana api documentation</title>
+  <title>Update fcm_id - Transgov Ghana api documentation</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Events";
+    var mkdocs_page_name = "Update fcm_id";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -78,15 +78,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Events</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#get-all-events">Get all events</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../transgov_events/">Events</a>
         
     </li>
 <li>
@@ -99,8 +92,15 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../update_fcm_id/">Update fcm_id</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Update fcm_id</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#update-fcm-id">Update FCM id</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -134,7 +134,7 @@
     
       
     
-    <li>Events</li>
+    <li>Update fcm_id</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -144,26 +144,37 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="get-all-events">Get all events</h3>
-<p><code>Endpoint: GET https://api.example.org/api/v1.0/events/</code></p>
-<p><code>Response: 200 ok</code></p>
-<pre><code> [
-  {
-    "id": 1,
-    "event_name": "New Event",
-    "event_description": "This is just a new event.",
-    "start_date": "2017-02-21",
-    "event_time": "",
-    "venue": "Haatso",
-    "region": "Greater Accra",
-    "sub_metro": "Ablekuma Central Sub Metro",
-    "position": "5.9657536710655235,-0.703125",
-    "event_image": null,
-    "published_date": null,
-    "modified": "2017-02-21T15:28:15.580034Z"
-  }
-]
+                <h3 id="update-fcm-id">Update FCM id</h3>
+<p>Firebase Cloud Messaging (FCM) is meant for sending messages to users. FCM id field will be used to store Firebase key per user to enable them receive notifications on any update in the app.</p>
+<ul>
+<li>
+<p>Method: <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/users/{pk}/update-fcm/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
 </code></pre>
+</li>
+<li>
+<p>Request <code>[JSON Body]</code></p>
+<pre><code> {
+ "fcm_id": "xxxxxxxxxxxxxxxxxxxxxxxxx"
+ }
+</code></pre>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
+<pre><code>  {
+    "id": 8,
+    "fcm_id": "xxxxxxxxxxxxxxxxxxxxxxxxx",
+    "user": 1
+  }
+</code></pre>
+</li>
+</ul>
               
             </div>
           </div>
@@ -171,10 +182,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../report_case/" class="btn btn-neutral float-right" title="Report case"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../update_profile/" class="btn btn-neutral float-right" title="Update profile"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../developmental_project_v2.0/" class="btn btn-neutral" title="Developmental Project v2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../report_case/" class="btn btn-neutral" title="Report case"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -200,10 +211,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../developmental_project_v2.0/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../report_case/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../report_case/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../update_profile/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

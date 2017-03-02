@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Account_registration - Transgov Ghana api documentation</title>
+  <title>Account Registration - Transgov Ghana api documentation</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Account_registration";
+    var mkdocs_page_name = "Account Registration";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -58,7 +58,7 @@
           
             <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Account_registration</a>
+        <a class="current" href="./">Account Registration</a>
         
             <ul>
             
@@ -75,14 +75,14 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../developmental_project/">Developmental_Project</a>
+        <a class="" href="../developmental_project/">Developmental Project</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../developmental_project_v2.0/">Developmental_Project_v2</a>
+        <a class="" href="../developmental_project_v2.0/">Developmental Project v2</a>
         
     </li>
 <li>
@@ -96,14 +96,21 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../report_case/">Report_case</a>
+        <a class="" href="../report_case/">Report case</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../update_profile/">Update_profile</a>
+        <a class="" href="../update_fcm_id/">Update fcm_id</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../update_profile/">Update profile</a>
         
     </li>
 <li>
@@ -130,7 +137,7 @@
     
       
     
-    <li>Account_registration</li>
+    <li>Account Registration</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -142,7 +149,9 @@
               
                 <h3 id="account-signup">Account signup</h3>
 <ul>
-<li>Method: <code>POST</code></li>
+<li>
+<p>Method: <code>POST</code></p>
+</li>
 <li>
 <p>Endpoint: <code>https://api.example.org/api/v1.0/users/signup/</code></p>
 </li>
@@ -158,9 +167,13 @@
 <li>
 <p>Response: <code>201 Created</code></p>
 <pre><code>{
+"id": 9,
+"auth_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 "email": "user@user.com",
 "username": "username",
-"token": "xxxxxxxxxxxxxxxxxxxxxx"
+"first_name": "",
+"last_name": "",
+"profile": null
 }
 </code></pre>
 </li>
@@ -181,12 +194,22 @@
 }
 </code></pre>
 </li>
-<li>
-<p>Response: <code>201 Created</code></p>
-<pre><code>{
-"email": "user@user.com",
+</ul>
+<p>if the user has filled his/her profile, the profile object will be included else profile field will return null.</p>
+<ul>
+<li>Response: <code>201 Created</code><pre><code>{
+"id": 1,
+"auth_token": "xxxxxxxxxxxxxxxxxxxx",
+"email": "xxxxx@xxxx.com",
 "username": "username",
-"token": "xxxxxxxxxxxxxxxxxx"
+"first_name": "first name",
+"last_name": "last name",
+"profile": {
+  "id": 1,
+  "location": "location",
+  "phone_number": 00000000,
+  "fcm_id": ""
+  }
 }
 </code></pre>
 </li>
@@ -198,7 +221,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../developmental_project/" class="btn btn-neutral float-right" title="Developmental_Project"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../developmental_project/" class="btn btn-neutral float-right" title="Developmental Project"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
