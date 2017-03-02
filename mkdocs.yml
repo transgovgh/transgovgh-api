@@ -1,11 +1,12 @@
 site_name: Transgov Ghana api documentation
 pages:
     - Home: index.md
-    - Account_registration: account_registration.md
-    - Developmental_Project: developmental_project.md
-    - Developmental_Project_v2: developmental_project_v2.0.md
+    - 'Account Registration': account_registration.md
+    - 'Developmental Project': developmental_project.md
+    - 'Developmental Project v2': developmental_project_v2.0.md
     - Events: transgov_events.md
-    - Report_case: report_case.md
-    - Update_profile: update_profile.md
+    - 'Report case': report_case.md
+    - 'Update fcm_id': update_fcm_id.md
+    - 'Update profile': update_profile.md
 
 theme: readthedocs

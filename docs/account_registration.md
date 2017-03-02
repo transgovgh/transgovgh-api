@@ -1,5 +1,6 @@
 ### Account signup
 - Method: `POST`
+
 - Endpoint: `https://api.example.org/api/v1.0/users/signup/`
   
 - Request: ``[JSON Body]``
@@ -14,9 +15,13 @@
 
 
         {
+        "id": 9,
+        "auth_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         "email": "user@user.com",
         "username": "username",
-        "token": "xxxxxxxxxxxxxxxxxxxxxx"
+        "first_name": "",
+        "last_name": "",
+        "profile": null
         }
 
 
@@ -32,12 +37,23 @@
         "password": "xxxxxxxx"
         }
   
+  if the user has filled his/her profile, the profile object will be included else profile field will return null.
+
   - Response: ``201 Created``
 
         {
-        "email": "user@user.com",
+        "id": 1,
+        "auth_token": "xxxxxxxxxxxxxxxxxxxx",
+        "email": "xxxxx@xxxx.com",
         "username": "username",
-        "token": "xxxxxxxxxxxxxxxxxx"
+        "first_name": "first name",
+        "last_name": "last name",
+        "profile": {
+          "id": 1,
+          "location": "location",
+          "phone_number": 00000000,
+          "fcm_id": ""
+          }
         }
 
 
