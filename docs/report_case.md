@@ -1,6 +1,9 @@
 ### Overview
+
 This is where a user can report or post any incident in his area, being it water spillage, public toilet spillage etc. The post is done by category. This page shows how a user can do the posting via mobile app
+
 ### Get all Case categories
+
 - Method: `GET`
 
 - Endpoint: `https://api.example.org/api/v1.0/case-category`
@@ -35,16 +38,18 @@ This is where a user can report or post any incident in his area, being it water
 
   - Request: ``[JSON Body]``
 
-        {
-        "case_category": 2,
-        "case_name": "Another case by user",
-        "case_description": "This is to test if it would separate user again",
-        "case_image_one": "/home/eit/Pictures/test.jpg",
-        "case_image_two": "/home/eit/Pictures/test.jpg",
-        "case_image_three": "/home/eit/Pictures/test.jpg",
-        "case_status": "fixing",
-        "location": "Ablekuma North Sub Metro"
-        }
+    - Note: ``case_image_one``, ``case_image_two``, ``case_image_two`` are all file field
+
+              {
+              "case_category": 2,
+              "case_name": "Another case by user",
+              "case_description": "This is to test if it would separate user again",
+              "case_image_one": "/home/eit/Pictures/test.jpg",
+              "case_image_two": "/home/eit/Pictures/test.jpg",
+              "case_image_three": "/home/eit/Pictures/test.jpg",
+              "case_status": "fixing",
+              "location": "Ablekuma North Sub Metro"
+              }
 
   - Response: ``201 Created``
 
@@ -84,16 +89,19 @@ This is where a user can report or post any incident in his area, being it water
 
   - Request: ``[JSON Body]``
 
-        {
-        "case_category": 2,
-        "case_name": "Another case by user",
-        "case_description": "This is to test if it would separate user again",
-        "case_image_one": "/home/eit/Pictures/test.jpg",
-        "case_image_two": "/home/eit/Pictures/test.jpg",
-        "case_image_three": "/home/eit/Pictures/test.jpg",
-        "case_status": "fixing",
-        "location": "Ablekuma North Sub Metro"
-        }
+      - Note: ``case_image_one``, ``case_image_two``, ``case_image_two`` are all file field
+
+
+            {
+            "case_category": 2,
+            "case_name": "Another case by user",
+            "case_description": "This is to test if it would separate user again",
+            "case_image_one": "/home/eit/Pictures/test.jpg",
+            "case_image_two": "/home/eit/Pictures/test.jpg",
+            "case_image_three": "/home/eit/Pictures/test.jpg",
+            "case_status": "fixing",
+            "location": "Ablekuma North Sub Metro"
+            }
 
   - Response: ``201 Created``
 
@@ -265,7 +273,9 @@ The project results on this page are paginated
 
 
 ### Get all cases a user has reported 
-(my cases)
+
+ - (my cases)
+
 - Method: `GET`
 
 - Endpoint: `https://api.example.org/api/v1.0/project-case/my-cases/`
@@ -333,7 +343,8 @@ The project results on this page are paginated
         ]
 
 ### Get all reported cases but Pending 
-(pending cases)
+- (pending cases)
+
 - Method: `GET`
 
 - Endpoint: `https://api.example.org/api/v1.0/project-case/pending-cases/`
@@ -402,7 +413,9 @@ The project results on this page are paginated
 
 
 ### Get all reported cases and being fixed by duty bearers 
-(fixing cases)
+
+- (fixing cases)
+
 - Method: `GET`
 
 - Endpoint:  `https://api.example.org/api/v1.0/project-case/fixing-cases/`
@@ -507,7 +520,9 @@ The project results on this page are paginated
 
 
 ### Get all fixed cases 
-(fixed cases)
+
+- (fixed cases)
+
 - Method: `GET`
 
 - Endpoint: `https://api.example.org/api/v1.0/project-case/fixed-cases/`

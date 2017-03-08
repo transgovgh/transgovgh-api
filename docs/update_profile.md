@@ -2,7 +2,7 @@
 ### Update Profile
 - Method `POST`
 
-- Endpoint: `https://api.example.org/v1.0/users/{pk}/update-profile/`
+- Endpoint: `https://api.example.org/v1.0/users/{userid}/update-profile/`
   
   - User Authorization: ``Required`` 
 
