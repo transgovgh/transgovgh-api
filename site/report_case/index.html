@@ -217,17 +217,20 @@
 </li>
 <li>
 <p>Request: <code>[JSON Body]</code></p>
-<pre><code>{
-"case_category": 2,
-"case_name": "Another case by user",
-"case_description": "This is to test if it would separate user again",
-"case_image_one": "/home/eit/Pictures/test.jpg",
-"case_image_two": "/home/eit/Pictures/test.jpg",
-"case_image_three": "/home/eit/Pictures/test.jpg",
-"case_status": "fixing",
-"location": "Ablekuma North Sub Metro"
-}
+<ul>
+<li>Note: <code>case_image_one</code>, <code>case_image_two</code>, <code>case_image_two</code> are all file field<pre><code>  {
+  "case_category": 2,
+  "case_name": "Another case by user",
+  "case_description": "This is to test if it would separate user again",
+  "case_image_one": "/home/eit/Pictures/test.jpg",
+  "case_image_two": "/home/eit/Pictures/test.jpg",
+  "case_image_three": "/home/eit/Pictures/test.jpg",
+  "case_status": "fixing",
+  "location": "Ablekuma North Sub Metro"
+  }
 </code></pre>
+</li>
+</ul>
 </li>
 <li>
 <p>Response: <code>201 Created</code></p>
@@ -271,7 +274,8 @@
 </li>
 <li>
 <p>Request: <code>[JSON Body]</code></p>
-<pre><code>{
+<ul>
+<li>Note: <code>case_image_one</code>, <code>case_image_two</code>, <code>case_image_two</code> are all file field<pre><code>{
 "case_category": 2,
 "case_name": "Another case by user",
 "case_description": "This is to test if it would separate user again",
@@ -282,6 +286,8 @@
 "location": "Ablekuma North Sub Metro"
 }
 </code></pre>
+</li>
+</ul>
 </li>
 <li>
 <p>Response: <code>201 Created</code></p>
@@ -461,9 +467,13 @@
 </li>
 </ul>
 <h3 id="get-all-cases-a-user-has-reported">Get all cases a user has reported</h3>
-<p>(my cases)
-- Method: <code>GET</code></p>
 <ul>
+<li>
+<p>(my cases)</p>
+</li>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
 <li>
 <p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/my-cases/</code></p>
 </li>
@@ -533,9 +543,13 @@
 </li>
 </ul>
 <h3 id="get-all-reported-cases-but-pending">Get all reported cases but Pending</h3>
-<p>(pending cases)
-- Method: <code>GET</code></p>
 <ul>
+<li>
+<p>(pending cases)</p>
+</li>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
 <li>
 <p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/pending-cases/</code></p>
 </li>
@@ -605,9 +619,13 @@
 </li>
 </ul>
 <h3 id="get-all-reported-cases-and-being-fixed-by-duty-bearers">Get all reported cases and being fixed by duty bearers</h3>
-<p>(fixing cases)
-- Method: <code>GET</code></p>
 <ul>
+<li>
+<p>(fixing cases)</p>
+</li>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
 <li>
 <p>Endpoint:  <code>https://api.example.org/api/v1.0/project-case/fixing-cases/</code></p>
 </li>
@@ -712,9 +730,13 @@
 </li>
 </ul>
 <h3 id="get-all-fixed-cases">Get all fixed cases</h3>
-<p>(fixed cases)
-- Method: <code>GET</code></p>
 <ul>
+<li>
+<p>(fixed cases)</p>
+</li>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
 <li>
 <p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/fixed-cases/</code></p>
 </li>

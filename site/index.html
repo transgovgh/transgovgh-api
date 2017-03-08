@@ -57,6 +57,18 @@
             
                 <li class="toctree-l3"><a href="#welcome-to-transgov-ghana-api-documantation">Welcome to Transgov Ghana Api documantation</a></li>
                 
+                    <li><a class="toctree-l4" href="#base-urls">Base URLs</a></li>
+                
+                    <li><a class="toctree-l4" href="#api-responses">API Responses</a></li>
+                
+                    <li><a class="toctree-l4" href="#good-response">Good Response</a></li>
+                
+                    <li><a class="toctree-l4" href="#error-codes">Error Codes</a></li>
+                
+                    <li><a class="toctree-l4" href="#owner">Owner</a></li>
+                
+                    <li><a class="toctree-l4" href="#developer">Developer</a></li>
+                
             
             </ul>
         
@@ -146,6 +158,39 @@
               
                 <h1 id="welcome-to-transgov-ghana-api-documantation">Welcome to Transgov Ghana Api documantation</h1>
 <p>For full information about Transgov visit <a href="http://transgovgh.org">www.transgovgh.org</a>.</p>
+<p>Quick notes</p>
+<p>This section describes the usage of the Transgov Mobile API. To get started. To fully implement the mobile API, you must understand following standards.</p>
+<p>Official API for the Transgov Mobile Applications</p>
+<h3 id="base-urls">Base URLs</h3>
+<ul>
+<li>To test the api on stage server, use: <code>http://stage.transgovgh.org/api/v1.0/</code></li>
+<li>To use the live or production api, use: <code>http://transgovgh.org/api/v1.0/</code> as your base URL. The base url must preceed all endpoints used to interact with the API server.</li>
+</ul>
+<h3 id="api-responses">API Responses</h3>
+<p>Generally, all API responses are returned in the standard <code>JSON</code> format.</p>
+<h3 id="good-response">Good Response</h3>
+<p>The standard HTTP response code which occures when data is submitted or data is fetched begins with <code>2</code> e.g. , <code>200 Ok</code>, <code>201 Created</code>, You will have a standard json response with a format:</p>
+<pre><code>{
+     "status_code": 200,
+     "message": "You have fetched all the data",
+     "results": [
+     ....................
+     ]
+}
+</code></pre>
+<p>The <code>status_code</code> in the response body describes the internal status code which describes the <code>message</code> of the error. The details describe the exact error that occurred and the results brings out the response of the request,</p>
+<h3 id="error-codes">Error Codes</h3>
+<p>Apart from the standard HTTP errors, there are errors codes which can be returned when something goes wrong. When an error with HTTP error code begins with <code>4</code> e.g. <code>400 (Bad Request)</code>, <code>401 (UnAuthorized)</code> You will have a standard json response with a format:</p>
+<pre><code>{
+     "status_code": 400,
+     "message": "Bad request. Data was not saved. Please check the fields and data you are submitting"
+}
+</code></pre>
+<p>The <code>status_code</code> in the response body describes the internal status code which describes the <code>message</code> of the error. The details describe the exact error that occurred.</p>
+<h3 id="owner">Owner</h3>
+<p>Transgov Ghana Limited.</p>
+<h3 id="developer">Developer</h3>
+<p>Kennedy Anyinatoe.</p>
               
             </div>
           </div>
@@ -191,5 +236,5 @@
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2017-03-02 13:33:46.692813
+Build Date UTC : 2017-03-08 16:34:28.460415
 -->
