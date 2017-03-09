@@ -104,10 +104,17 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#update-profile">Update Profile</a></li>
+                <li class="toctree-l3"><a href="#add-profile">Add Profile</a></li>
                 
             
             </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../update_user_account/">Update user account info</a>
         
     </li>
 <li>
@@ -144,46 +151,66 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="update-profile">Update Profile</h3>
+                <h3 id="add-profile">Add Profile</h3>
 <ul>
 <li>
 <p>Method <code>POST</code></p>
 </li>
 <li>
-<p>Endpoint: <code>https://api.example.org/v1.0/users/{pk}/update-profile/</code></p>
+<p>Endpoint: <code>https://api.example.org/v1.0/users/{userid}/add-profile/</code></p>
 </li>
+</ul>
+<p>This enpoint adds location and phone number to user if it doesn't exist, and updates same fields: <code>location</code> and  <code>phone number</code> if it exists.</p>
+<ul>
 <li>
 <p>User Authorization: <code>Required</code> </p>
-<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxxxxxxxxxxxxx"
 </code></pre>
 </li>
 <li>
 <p>Request: <code>[JSON Body]</code></p>
 <pre><code>{
-"first_name":"Kelvin",
-"last_name": "Anyinatoe",
 "location": "Abeka",
-"phone_number": "0246424340"
+"phone_number": 0246424340
 }
 </code></pre>
 </li>
 <li>
-<p>Response: <code>201 Created</code></p>
-<pre><code>{
-  "id": 2,
-  "auth_token": "687a95d0bcefcec5278820fd6939e8d4291a372a",
-  "email": "user@user.com",
-  "username": "user",
-  "first_name": "Kelvin",
-  "last_name": "Anyinatoe",
-  "profile": {
-  "id": 2,
-  "location": "Abeka",
-  "phone_number": 246424340,
-  "fcm_id": ""
-  }
+<p>If it's first time adding <code>location</code> and <code>phone number</code> </p>
+<ul>
+<li>Response: <code>201 Created</code><pre><code>  {
+    "status_code": 201,
+    "message": "You have added your location and phone number",
+    "result": {
+      "id": 2,
+      "auth_token": "687a95d0bcefcec5278820fd6939e8d4291a372a",
+      "email": "user@user.com",
+      "username": "user",
+      "first_name": "Kennedy",
+      "last_name": "Anyinatoe",
+      "profile": {
+        "id": 4,
+        "location": "Dansoman",
+        "phone_number": 246424340,
+        "fcm_id": ""
+      },
+      "firebase": null
+    }
+   }
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>If <code>location</code> and <code>phone number</code> already exist, it will update it</p>
+<ul>
+<li>Response: <code>201 Created</code><pre><code>{
+  "status_code": 201,
+  "message": "You have updated your profile details "
 }
 </code></pre>
+</li>
+</ul>
 </li>
 </ul>
               
@@ -192,6 +219,8 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../update_user_account/" class="btn btn-neutral float-right" title="Update user account info"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../update_fcm_id/" class="btn btn-neutral" title="Update fcm_id"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -222,6 +251,8 @@
       
         <span><a href="../update_fcm_id/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../update_user_account/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
