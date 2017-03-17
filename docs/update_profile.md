@@ -2,7 +2,7 @@
 ### Add Profile
 - Method `POST`
 
-- Endpoint: `https://api.example.org/v1.0/users/{userid}/add-profile/`
+- Endpoint: `https://api.example.org/v1.0/users/add-profile/`
 
 This enpoint adds location and phone number to user if it doesn't exist, and updates same fields: ``location`` and  ``phone number`` if it exists.
   
@@ -34,7 +34,7 @@ This enpoint adds location and phone number to user if it doesn't exist, and upd
                   "profile": {
                     "id": 4,
                     "location": "Dansoman",
-                    "phone_number": 246424340,
+                    "phone_number": "246424340",
                     "fcm_id": ""
                   },
                   "firebase": null

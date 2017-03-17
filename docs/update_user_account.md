@@ -1,7 +1,7 @@
 ### Update user account 
 update user account with first name and and last name
 
-- Endpoint: `https://api.example.org/v1.0/users/{userid}/update-user-firstname-lastname/`
+- Endpoint: `https://api.example.org/v1.0/users/update-user-firstname-lastname/`
 
 ` This endpoint updates the user account with first name and last name
 
