@@ -4,7 +4,7 @@ Firebase Cloud Messaging (FCM) is meant for sending messages to users. FCM id fi
 
 - Method: `POST`
 
-- Endpoint: `https://api.example.org/api/v1.0/users/{pk}/update-fcm/`
+- Endpoint: `https://api.example.org/api/v1.0/users/update-fcm/`
 
 - User Authorization: ``Required`` 
 
