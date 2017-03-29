@@ -160,7 +160,7 @@
 <p>Endpoint: <code>https://api.example.org/v1.0/users/add-profile/</code></p>
 </li>
 </ul>
-<p>This enpoint adds location and phone number to user if it doesn't exist, and updates same fields: <code>location</code> and  <code>phone number</code> if it exists.</p>
+<p>This enpoint adds region, suburb and phone number to user if it doesn't exist, and updates same fields: <code>region</code> , <code>suburb</code> and  <code>phone number</code> if it exists.</p>
 <ul>
 <li>
 <p>User Authorization: <code>Required</code> </p>
@@ -170,39 +170,41 @@
 <li>
 <p>Request: <code>[JSON Body]</code></p>
 <pre><code>{
-"location": "Abeka",
-"phone_number": 0246424340
+"region": 1,
+"suburb": 1,
+"phone_number": "0246424340"
 }
 </code></pre>
 </li>
 <li>
-<p>If it's first time adding <code>location</code> and <code>phone number</code> </p>
+<p>If it's first time adding <code>region</code> , <code>suburb</code> and <code>phone number</code> </p>
 <ul>
 <li>Response: <code>201 Created</code><pre><code>  {
     "status_code": 201,
     "message": "You have added your location and phone number",
     "result": {
-      "id": 2,
-      "auth_token": "687a95d0bcefcec5278820fd6939e8d4291a372a",
-      "email": "user@user.com",
-      "username": "user",
+      "id": 1,
+      "auth_token": "b15623ed0d3caaa1ad406033a3ba619af3f8ff88",
+      "email": "kenmartey89@gmail.com",
+      "username": "kenmartey",
       "first_name": "Kennedy",
       "last_name": "Anyinatoe",
       "profile": {
-        "id": 4,
-        "location": "Dansoman",
-        "phone_number": "246424340",
+        "id": 9,
+        "region": "Greater Accra",
+        "suburb": "East Legon",
+        "phone_number": "0246424340",
         "fcm_id": ""
       },
-      "firebase": null
+      "firebase": 9
     }
-   }
+  }
 </code></pre>
 </li>
 </ul>
 </li>
 <li>
-<p>If <code>location</code> and <code>phone number</code> already exist, it will update it</p>
+<p>If <code>region</code> , <code>suburb</code>  and <code>phone number</code> already exist, it will update it</p>
 <ul>
 <li>Response: <code>201 Created</code><pre><code>{
   "status_code": 201,
