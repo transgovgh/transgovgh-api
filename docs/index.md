@@ -10,8 +10,8 @@ Official API for the Transgov Mobile Applications
 
 ### Base URLs
 
- - To test the api on stage server, use: ``http://stage.transgovgh.org/api/v1.0/``
- - To use the live or production api, use: ``http://transgovgh.org/api/v1.0/`` as your base URL. The base url must preceed all endpoints used to interact with the API server.
+ - To test the api on stage server, use: ``https://stage.transgovgh.org/api/v1.0/``
+ - To use the live or production api, use: ``https://transgovgh.org/api/v1.0/`` as your base URL. The base url must preceed all endpoints used to interact with the API server.
 
 
 ### API Responses

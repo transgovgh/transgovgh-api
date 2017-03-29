@@ -37,7 +37,7 @@
         }, 
         {
             "location": "/update_fcm_id/", 
-            "text": "Update FCM id\n\n\nFirebase Cloud Messaging (FCM) is meant for sending messages to users. FCM id field will be used to store Firebase key per user to enable them receive notifications on any update in the app.\n\n\n\n\n\n\nMethod: \nPOST\n\n\n\n\n\n\nEndpoint: \nhttps://api.example.org/api/v1.0/users/{pk}/update-fcm/\n\n\n\n\n\n\nUser Authorization: \nRequired\n \n\n\n  \"Authorization\": \"Token xxxxxxxxxxxxx\"\n\n\n\n\n\n\n\nRequest \n[JSON Body]\n\n\n {\n \"fcm_id\": \"xxxxxxxxxxxxxxxxxxxxxxxxx\"\n }\n\n\n\n\n\n\n\nResponse: \n201 Created\n\n\n  {\n    \"id\": 8,\n    \"fcm_id\": \"xxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"user\": 1\n  }", 
+            "text": "Update FCM id\n\n\nFirebase Cloud Messaging (FCM) is meant for sending messages to users. FCM id field will be used to store Firebase key per user to enable them receive notifications on any update in the app.\n\n\n\n\n\n\nMethod: \nPOST\n\n\n\n\n\n\nEndpoint: \nhttps://api.example.org/api/v1.0/users/update-fcm/\n\n\n\n\n\n\nUser Authorization: \nRequired\n \n\n\n  \"Authorization\": \"Token xxxxxxxxxxxxx\"\n\n\n\n\n\n\n\nRequest \n[JSON Body]\n\n\n {\n \"fcm_id\": \"xxxxxxxxxxxxxxxxxxxxxxxxx\"\n }\n\n\n\n\n\n\n\nResponse: \n201 Created\n\n\n  {\n    \"id\": 8,\n    \"fcm_id\": \"xxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"user\": 1\n  }", 
             "title": "Update fcm_id"
         }, 
         {

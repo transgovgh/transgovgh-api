@@ -48,32 +48,53 @@ This is where a user can report or post any incident in his area, being it water
               "case_image_two": "/home/eit/Pictures/test.jpg",
               "case_image_three": "/home/eit/Pictures/test.jpg",
               "case_status": "fixing",
-              "location": "Ablekuma North Sub Metro"
+              "region": 1,
+              "suburb": 1,
+              "land_mark": "close to school junction, Ashale botwe"
               }
 
   - Response: ``201 Created``
 
           {
-            "id": 13,
-            "case_number": "9BCA763349",
-            "case_category": {
-            "id": 2,
-            "category_name": "Water",
-            "description": "This in information about water works",
-            "category_image": "/media/images/category_image.jpg",
-            "author": 1
-          },
-          "case_name": "Another case by user",
-          "case_description": "This is to test if it would separate user again",
-          "case_image_one": "/media/images/about-1-pict.jpg",
-          "case_image_two": "/media/images/about-2-pict.jpg",
-          "case_image_three": "/media/images/about-3-pict.jpg",
-          "case_status": "fixing",
-          "location": "Ablekuma North Sub Metro",
-          "author": 2,
-          "gravity": false,
-          "count_gravity": 0,
-          "created_date": "2017-02-21T16:21:22.661830Z"
+            "status_code": 201,
+            "message": "You have updated a fault reported",
+            "results": {
+              "id": 45,
+              "case_number": "7F794850FC",
+              "case_category": {
+                "id": 2,
+                "category_name": "Water",
+                "description": "This in information about water works",
+                "category_image": null,
+                "author": 1
+              },
+              "case_name": "Test region and suburb",
+              "case_description": "This is to test if it would separate user again",
+              "case_image_one": "/home/eit/Pictures/test.jpg",
+              "case_image_two": "/home/eit/Pictures/test.jpg",
+              "case_image_three": "/home/eit/Pictures/test.jpg",
+              "case_status": "pending",
+              "region": {
+                "id": 1,
+                "region": "Greater Accra",
+                "author": 1,
+                "created_date": "2017-03-28T13:47:27.384510Z",
+                "modified": "2017-03-28T13:47:27.384535Z"
+              },
+              "suburb": {
+                "id": 1,
+                "region": 1,
+                "suburb": "Abeka",
+                "author": 1,
+                "created_date": "2017-03-28T13:47:41.793889Z",
+                "modified": "2017-03-28T13:47:41.793925Z"
+              },
+              "land_mark": "close to school junction, Ashale botwe",
+              "author": 1,
+              "gravity": false,
+              "count_gravity": 0,
+              "created_date": "2017-03-28T22:36:18.637705Z"
+            }
           }
 
 
@@ -100,32 +121,53 @@ This is where a user can report or post any incident in his area, being it water
             "case_image_two": "/home/eit/Pictures/test.jpg",
             "case_image_three": "/home/eit/Pictures/test.jpg",
             "case_status": "fixing",
-            "location": "Ablekuma North Sub Metro"
+            "region": 1,
+            "suburb": 1,
+            "land_mark": "close to school junction, Ashale botwe"
             }
 
   - Response: ``201 Created``
 
         {
-            "id": 13,
-            "case_number": "9BCA763349",
+          "status_code": 201,
+          "message": "You have updated a fault reported",
+          "results": {
+            "id": 45,
+            "case_number": "7F794850FC",
             "case_category": {
-            "id": 2,
-            "category_name": "Water",
-            "description": "This in information about water works",
-            "category_image": "/media/images/category_image.jpg",
-            "author": 1
-          },
-          "case_name": "Another case by user",
-          "case_description": "This is to test if it would separate user again",
-          "case_image_one": "/media/images/about-1-pict.jpg",
-          "case_image_two": "/media/images/about-2-pict.jpg",
-          "case_image_three": "/media/images/about-3-pict.jpg",
-          "case_status": "fixing",
-          "location": "Ablekuma North Sub Metro",
-          "author": 2,
-          "gravity": false,
-          "count_gravity": 0,
-          "created_date": "2017-02-21T16:21:22.661830Z"
+              "id": 2,
+              "category_name": "Water",
+              "description": "This in information about water works",
+              "category_image": null,
+              "author": 1
+            },
+            "case_name": "Test region and suburb",
+            "case_description": "This is to test if it would separate user again",
+            "case_image_one": "/home/eit/Pictures/test.jpg",
+            "case_image_two": "/home/eit/Pictures/test.jpg",
+            "case_image_three": "/home/eit/Pictures/test.jpg",
+            "case_status": "pending",
+            "region": {
+              "id": 1,
+              "region": "Greater Accra",
+              "author": 1,
+              "created_date": "2017-03-28T13:47:27.384510Z",
+              "modified": "2017-03-28T13:47:27.384535Z"
+            },
+            "suburb": {
+              "id": 1,
+              "region": 1,
+              "suburb": "Abeka",
+              "author": 1,
+              "created_date": "2017-03-28T13:47:41.793889Z",
+              "modified": "2017-03-28T13:47:41.793925Z"
+            },
+            "land_mark": "close to school junction, Ashale botwe",
+            "author": 1,
+            "gravity": false,
+            "count_gravity": 0,
+            "created_date": "2017-03-28T22:36:18.637705Z"
+          }
         }
 
 <!-- 
