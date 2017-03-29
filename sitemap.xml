@@ -43,7 +43,15 @@
 
     
     <url>
-     <loc>None/report_case/</loc>
+     <loc>None/regions_suburbs/</loc>
+     <lastmod>2017-03-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/report_faults/</loc>
      <lastmod>2017-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
