@@ -167,7 +167,7 @@
 <p>Endpoint: <code>https://api.example.org/v1.0/users/add-profile/</code></p>
 </li>
 </ul>
-<p>This enpoint adds region, suburb and phone number to user if it doesn't exist, and updates same fields: <code>region</code> , <code>suburb</code> and  <code>phone number</code> if it exists.</p>
+<p>This enpoint adds region, suburb, phone number and profile_image to user if it doesn't exist, and updates same fields: <code>region</code> , <code>suburb</code>, <code>phone number</code> and <code>profile_image</code> if it exists.</p>
 <ul>
 <li>
 <p>User Authorization: <code>Required</code> </p>
@@ -176,15 +176,19 @@
 </li>
 <li>
 <p>Request: <code>[JSON Body]</code></p>
+</li>
+<li>
+<p>Note: <code>profile_image</code> are is a file field</p>
 <pre><code>{
 "region": 1,
 "suburb": 1,
-"phone_number": "0246424340"
+"phone_number": "0246424340",
+"profile_image": "/media/images/profile-image.jpg"
 }
 </code></pre>
 </li>
 <li>
-<p>If it's first time adding <code>region</code> , <code>suburb</code> and <code>phone number</code> </p>
+<p>If it's first time adding <code>region</code> , <code>suburb</code>, <code>phone number</code> and <code>`profile_image</code></p>
 <ul>
 <li>Response: <code>201 Created</code><pre><code>  {
     "status_code": 201,
@@ -201,6 +205,7 @@
         "region": "Greater Accra",
         "suburb": "East Legon",
         "phone_number": "0246424340",
+        "profile_image": "/media/images/profile-image.jpg",
         "fcm_id": ""
       },
       "firebase": 9
@@ -211,7 +216,7 @@
 </ul>
 </li>
 <li>
-<p>If <code>region</code> , <code>suburb</code>  and <code>phone number</code> already exist, it will update it</p>
+<p>If <code>region</code> , <code>suburb</code>, <code>phone number</code> and <code>`profile_image</code> already exist, it will update it</p>
 <ul>
 <li>Response: <code>201 Created</code><pre><code>{
   "status_code": 201,
