@@ -93,7 +93,7 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../report_faults/">Report case</a>
+        <a class="" href="../report_faults/">Report Faults</a>
         
     </li>
 <li>
@@ -195,20 +195,39 @@
     "message": "You have added your location and phone number",
     "result": {
       "id": 1,
-      "auth_token": "b15623ed0d3caaa1ad406033a3ba619af3f8ff88",
+      "auth_token": "806215e74ce5640a86136b462115301f846023d7",
       "email": "kenmartey89@gmail.com",
       "username": "kenmartey",
-      "first_name": "Kennedy",
-      "last_name": "Anyinatoe",
+      "first_name": "",
+      "last_name": "",
       "profile": {
-        "id": 9,
-        "region": "Greater Accra",
-        "suburb": "East Legon",
+        "id": 2,
+        "region": {
+          "id": 1,
+          "region": "Greater Accra",
+          "author": 1,
+          "created_date": "2017-03-29T09:42:47.763945Z",
+          "modified": "2017-03-29T09:42:47.763970Z"
+        },
+        "suburb": {
+          "id": 1,
+          "region": {
+            "id": 1,
+            "region": "Greater Accra",
+            "author": 1,
+            "created_date": "2017-03-29T09:42:47.763945Z",
+            "modified": "2017-03-29T09:42:47.763970Z"
+          },
+          "suburb": "Abeka",
+          "author": 1,
+          "created_date": "2017-03-29T09:43:07.583824Z",
+          "modified": "2017-03-29T09:43:07.583849Z"
+        },
         "phone_number": "0246424340",
-        "profile_image": "/media/images/profile-image.jpg",
+        "profile_image": "/media/profile_image/profile.jpg",
         "fcm_id": ""
       },
-      "firebase": 9
+      "firebase": null
     }
   }
 </code></pre>
@@ -220,7 +239,43 @@
 <ul>
 <li>Response: <code>201 Created</code><pre><code>{
   "status_code": 201,
-  "message": "You have updated your profile details "
+  "message": "You have added your location and phone number",
+  "result": {
+    "id": 1,
+    "auth_token": "806215e74ce5640a86136b462115301f846023d7",
+    "email": "kenmartey89@gmail.com",
+    "username": "kenmartey",
+    "first_name": "",
+    "last_name": "",
+    "profile": {
+      "id": 2,
+      "region": {
+        "id": 1,
+        "region": "Greater Accra",
+        "author": 1,
+        "created_date": "2017-03-29T09:42:47.763945Z",
+        "modified": "2017-03-29T09:42:47.763970Z"
+      },
+      "suburb": {
+        "id": 1,
+        "region": {
+          "id": 1,
+          "region": "Greater Accra",
+          "author": 1,
+          "created_date": "2017-03-29T09:42:47.763945Z",
+          "modified": "2017-03-29T09:42:47.763970Z"
+        },
+        "suburb": "Abeka",
+        "author": 1,
+        "created_date": "2017-03-29T09:43:07.583824Z",
+        "modified": "2017-03-29T09:43:07.583849Z"
+      },
+      "phone_number": "0246424340",
+      "profile_image": "/media/profile_image/profile.jpg",
+      "fcm_id": ""
+    },
+    "firebase": null
+  }
 }
 </code></pre>
 </li>
