@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Report case - Transgov Ghana api documentation</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Report case";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Transgov Ghana api documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../account_registration/">Account Registration</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../developmental_project/">Developmental Project</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../developmental_project_v2.0/">Developmental Project v2</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../transgov_events/">Events</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../regions_suburbs/">Regions and Suburbs</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Report case</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#overview">Overview</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-all-fault-categories">Get all fault categories</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#report-a-fault">Report a fault</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#update-a-fault">Update a fault</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#add-gravity-to-fault-reported-upvote">Add gravity to fault reported (upvote)</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-all-faults-reported">Get all faults reported</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-all-faults-a-user-has-reported">Get all faults a user has reported</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-all-reported-faults-but-pending">Get all reported faults but Pending</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-all-reported-faults-and-being-fixed-by-duty-bearers">Get all reported faults and being fixed by duty bearers</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#get-all-fixed-faults-reported">Get all fixed faults reported</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../update_fcm_id/">Update fcm_id</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../update_profile/">Update profile</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../update_user_account/">Update user account info</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Transgov Ghana api documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Report case</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="overview">Overview</h3>
+<p>This is where a user can report or post any incident in his area, being it water spillage, public toilet spillage etc. The post is done by category. This page shows how a user can do the posting via mobile app</p>
+<h3 id="get-all-fault-categories">Get all fault categories</h3>
+<ul>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/case-category</code></p>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
+<pre><code>[
+  {
+    "id": 1,
+    "category_name": "Electricity",
+    "description": "This is information about electricity",
+    "category_image": "/media/images/category_image.jpg",
+    "author": 1
+  },
+  {
+    "id": 2,
+    "category_name": "Water",
+    "description": "This in information about water works",
+    "category_image": "/media/images/category_image.jpg",
+    "author": 1
+  }
+]
+</code></pre>
+</li>
+</ul>
+<h3 id="report-a-fault">Report a fault</h3>
+<ul>
+<li>
+<p>Method:<code>POST</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/create-case/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Request: <code>[JSON Body]</code></p>
+<ul>
+<li>Note: <code>case_image_one</code>, <code>case_image_two</code>, <code>case_image_two</code> are all file field<pre><code>  {
+  "case_category": 2,
+  "case_name": "Another case by user",
+  "case_description": "This is to test if it would separate user again",
+  "case_image_one": "/home/eit/Pictures/test.jpg",
+  "case_image_two": "/home/eit/Pictures/test.jpg",
+  "case_image_three": "/home/eit/Pictures/test.jpg",
+  "case_status": "fixing",
+  "region": 1,
+  "suburb": 1,
+  "land_mark": "close to school junction, Ashale botwe"
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
+<pre><code>  {
+    "status_code": 201,
+    "message": "You have updated a fault reported",
+    "results": {
+      "id": 45,
+      "case_number": "7F794850FC",
+      "case_category": {
+        "id": 2,
+        "category_name": "Water",
+        "description": "This in information about water works",
+        "category_image": null,
+        "author": 1
+      },
+      "case_name": "Test region and suburb",
+      "case_description": "This is to test if it would separate user again",
+      "case_image_one": "/home/eit/Pictures/test.jpg",
+      "case_image_two": "/home/eit/Pictures/test.jpg",
+      "case_image_three": "/home/eit/Pictures/test.jpg",
+      "case_status": "pending",
+      "region": {
+        "id": 1,
+        "region": "Greater Accra",
+        "author": 1,
+        "created_date": "2017-03-28T13:47:27.384510Z",
+        "modified": "2017-03-28T13:47:27.384535Z"
+      },
+      "suburb": {
+        "id": 1,
+        "region": 1,
+        "suburb": "Abeka",
+        "author": 1,
+        "created_date": "2017-03-28T13:47:41.793889Z",
+        "modified": "2017-03-28T13:47:41.793925Z"
+      },
+      "land_mark": "close to school junction, Ashale botwe",
+      "author": 1,
+      "gravity": false,
+      "count_gravity": 0,
+      "created_date": "2017-03-28T22:36:18.637705Z"
+    }
+  }
+</code></pre>
+</li>
+</ul>
+<h3 id="update-a-fault">Update a fault</h3>
+<ul>
+<li>
+<p>Method: <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/{xx}/update-case/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Request: <code>[JSON Body]</code></p>
+<ul>
+<li>Note: <code>case_image_one</code>, <code>case_image_two</code>, <code>case_image_two</code> are all file field<pre><code>{
+"case_category": 2,
+"case_name": "Another case by user",
+"case_description": "This is to test if it would separate user again",
+"case_image_one": "/home/eit/Pictures/test.jpg",
+"case_image_two": "/home/eit/Pictures/test.jpg",
+"case_image_three": "/home/eit/Pictures/test.jpg",
+"case_status": "fixing",
+"region": 1,
+"suburb": 1,
+"land_mark": "close to school junction, Ashale botwe"
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
+<pre><code>{
+  "status_code": 201,
+  "message": "You have updated a fault reported",
+  "results": {
+    "id": 45,
+    "case_number": "7F794850FC",
+    "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "category_image": null,
+      "author": 1
+    },
+    "case_name": "Test region and suburb",
+    "case_description": "This is to test if it would separate user again",
+    "case_image_one": "/home/eit/Pictures/test.jpg",
+    "case_image_two": "/home/eit/Pictures/test.jpg",
+    "case_image_three": "/home/eit/Pictures/test.jpg",
+    "case_status": "pending",
+    "region": {
+      "id": 1,
+      "region": "Greater Accra",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:27.384510Z",
+      "modified": "2017-03-28T13:47:27.384535Z"
+    },
+    "suburb": {
+      "id": 1,
+      "region": 1,
+      "suburb": "Abeka",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:41.793889Z",
+      "modified": "2017-03-28T13:47:41.793925Z"
+    },
+    "land_mark": "close to school junction, Ashale botwe",
+    "author": 1,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-03-28T22:36:18.637705Z"
+  }
+}
+</code></pre>
+</li>
+</ul>
+<!-- 
+### Add images to a case
+
+`Endpoint: POST https://api.example.org/api/v1.0/project-case/{pk}/add-images/`
+
+  ``Request: [JSON Body]``
+
+    {
+    "case_images": "/media/images/about-1-pict.jpg",
+    }
+
+  `Response: 201 Created`
+
+    {
+    "id": 1,
+    "case_images": "/media/images/about-1-pict.jpg",
+    }
+ -->
+
+<h3 id="add-gravity-to-fault-reported-upvote">Add gravity to fault reported (upvote)</h3>
+<p>This is to show how serious reported the case is</p>
+<ul>
+<li>
+<p>Method: <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint:  <code>https://api.example.org/api/v1.0/project-case/{pk}/add-gravity/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Response: <code>201 Created</code></p>
+<pre><code>{
+  "id": 13,
+  "case_number": "9BCA763349",
+  "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "category_image": null,
+      "author": 1
+    },
+    "case_name": "Test region and suburb",
+    "case_description": "This is to test if it would separate user again",
+    "case_image_one": "/home/eit/Pictures/test.jpg",
+    "case_image_two": "/home/eit/Pictures/test.jpg",
+    "case_image_three": "/home/eit/Pictures/test.jpg",
+    "case_status": "pending",
+    "region": {
+      "id": 1,
+      "region": "Greater Accra",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:27.384510Z",
+      "modified": "2017-03-28T13:47:27.384535Z"
+    },
+    "suburb": {
+      "id": 1,
+      "region": 1,
+      "suburb": "Abeka",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:41.793889Z",
+      "modified": "2017-03-28T13:47:41.793925Z"
+    },
+    "land_mark": "close to school junction, Ashale botwe",
+    "author": 1,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-03-28T22:36:18.637705Z"
+  "case_images": [
+    {
+      "id": 17,
+      "case_images": "/media/images/about-1-pict_m1FD6Pf.jpg"
+    },
+    {
+      "id": 16,
+      "case_images": "/media/images/about-1-pict_0E8hVN6.jpg"
+    },
+    {
+      "id": 15,
+      "case_images": "/media/images/about-1-pict_wpo22JP.jpg"
+    }
+  ]
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="get-all-faults-reported">Get all faults reported</h3>
+<p>The project results on this page are paginated
+- Method: <code>GET</code></p>
+<ul>
+<li>
+<p>Endpoint:  <code>https://api.example.org/api/v1.0/project-case/</code></p>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
+<pre><code>{
+  "id": 13,
+  "case_number": "9BCA763349",
+  "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "category_image": null,
+      "author": 1
+    },
+    "case_name": "Test region and suburb",
+    "case_description": "This is to test if it would separate user again",
+    "case_image_one": "/home/eit/Pictures/test.jpg",
+    "case_image_two": "/home/eit/Pictures/test.jpg",
+    "case_image_three": "/home/eit/Pictures/test.jpg",
+    "case_status": "pending",
+    "region": {
+      "id": 1,
+      "region": "Greater Accra",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:27.384510Z",
+      "modified": "2017-03-28T13:47:27.384535Z"
+    },
+    "suburb": {
+      "id": 1,
+      "region": 1,
+      "suburb": "Abeka",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:41.793889Z",
+      "modified": "2017-03-28T13:47:41.793925Z"
+    },
+    "land_mark": "close to school junction, Ashale botwe",
+    "author": 1,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-03-28T22:36:18.637705Z"
+  "case_images": [
+    {
+      "id": 17,
+      "case_images": "/media/images/about-1-pict_m1FD6Pf.jpg"
+    },
+    {
+      "id": 16,
+      "case_images": "/media/images/about-1-pict_0E8hVN6.jpg"
+    },
+    {
+      "id": 15,
+      "case_images": "/media/images/about-1-pict_wpo22JP.jpg"
+    }
+  ]
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="get-all-faults-a-user-has-reported">Get all faults a user has reported</h3>
+<ul>
+<li>
+<p>(my cases)</p>
+</li>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/my-cases/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
+<pre><code>[
+  {
+    "id": 11,
+    "case_number": "CC245B8C06",
+    "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "author": 1
+    },
+    "case_name": "User created this case",
+    "case_description": "This is to test if it would separate user",
+    "case_image": "/media/images/vvvvvv_CuW36e6.jpg",
+    "case_status": "pending",
+    "location": "Ablekuma North Sub Metro",
+    "author": 2,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-02-07T22:18:37.582209Z",
+    "case_images": []
+  },
+  {
+    "id": 13,
+    "case_number": "9BCA763349",
+    "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "author": 1
+    },
+    "case_name": "Another case by user",
+    "case_description": "This is to test if it would separate user again",
+    "case_image": "/media/images/about-1-pict.jpg",
+    "case_status": "fixing",
+    "location": "Ablekuma North Sub Metro",
+    "author": 2,
+    "gravity": true,
+    "count_gravity": 1,
+    "created_date": "2017-02-21T16:21:22.661830Z",
+    "case_images": [
+      {
+        "id": 17,
+        "case_images": "/media/images/about-1-pict_m1FD6Pf.jpg"
+      },
+      {
+        "id": 16,
+        "case_images": "/media/images/about-1-pict_0E8hVN6.jpg"
+      },
+      {
+        "id": 15,
+        "case_images": "/media/images/about-1-pict_wpo22JP.jpg"
+      }
+    ]
+  },
+  {
+  "id": 13,
+  "case_number": "9BCA763349",
+  "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "category_image": null,
+      "author": 1
+    },
+    "case_name": "Test region and suburb",
+    "case_description": "This is to test if it would separate user again",
+    "case_image_one": "/home/eit/Pictures/test.jpg",
+    "case_image_two": "/home/eit/Pictures/test.jpg",
+    "case_image_three": "/home/eit/Pictures/test.jpg",
+    "case_status": "pending",
+    "region": {
+      "id": 1,
+      "region": "Greater Accra",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:27.384510Z",
+      "modified": "2017-03-28T13:47:27.384535Z"
+    },
+    "suburb": {
+      "id": 1,
+      "region": 1,
+      "suburb": "Abeka",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:41.793889Z",
+      "modified": "2017-03-28T13:47:41.793925Z"
+    },
+    "land_mark": "close to school junction, Ashale botwe",
+    "author": 1,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-03-28T22:36:18.637705Z"
+  "case_images": [
+    {
+      "id": 17,
+      "case_images": "/media/images/about-1-pict_m1FD6Pf.jpg"
+    },
+    {
+      "id": 16,
+      "case_images": "/media/images/about-1-pict_0E8hVN6.jpg"
+    },
+    {
+      "id": 15,
+      "case_images": "/media/images/about-1-pict_wpo22JP.jpg"
+    }
+  ]
+}
+]
+</code></pre>
+</li>
+</ul>
+<h3 id="get-all-reported-faults-but-pending">Get all reported faults but Pending</h3>
+<ul>
+<li>
+<p>(pending faults)</p>
+</li>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/pending-cases/</code></p>
+</li>
+<li>
+<p>User Authorization: <code>Required</code> </p>
+<pre><code>  "Authorization": "Token xxxxxxxxxxxxx"
+</code></pre>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
+<pre><code>[
+  {
+    "id": 11,
+    "case_number": "CC245B8C06",
+    "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "author": 1
+    },
+    "case_name": "User created this case",
+    "case_description": "This is to test if it would separate user",
+    "case_image": "/media/images/vvvvvv_CuW36e6.jpg",
+    "case_status": "pending",
+    "location": "Ablekuma North Sub Metro",
+    "author": 2,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-02-07T22:18:37.582209Z",
+    "case_images": []
+  },
+  {
+    "id": 13,
+    "case_number": "9BCA763349",
+    "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "author": 1
+    },
+    "case_name": "Another case by user",
+    "case_description": "This is to test if it would separate user again",
+    "case_image": "/media/images/about-1-pict.jpg",
+    "case_status": "pending",
+    "location": "Ablekuma North Sub Metro",
+    "author": 2,
+    "gravity": true,
+    "count_gravity": 1,
+    "created_date": "2017-02-21T16:21:22.661830Z",
+    "case_images": [
+      {
+        "id": 17,
+        "case_images": "/media/images/about-1-pict_m1FD6Pf.jpg"
+      },
+      {
+        "id": 16,
+        "case_images": "/media/images/about-1-pict_0E8hVN6.jpg"
+      },
+      {
+        "id": 15,
+        "case_images": "/media/images/about-1-pict_wpo22JP.jpg"
+      }
+    ]
+  },
+  {
+  "id": 13,
+  "case_number": "9BCA763349",
+  "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "category_image": null,
+      "author": 1
+    },
+    "case_name": "Test region and suburb",
+    "case_description": "This is to test if it would separate user again",
+    "case_image_one": "/home/eit/Pictures/test.jpg",
+    "case_image_two": "/home/eit/Pictures/test.jpg",
+    "case_image_three": "/home/eit/Pictures/test.jpg",
+    "case_status": "pending",
+    "region": {
+      "id": 1,
+      "region": "Greater Accra",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:27.384510Z",
+      "modified": "2017-03-28T13:47:27.384535Z"
+    },
+    "suburb": {
+      "id": 1,
+      "region": 1,
+      "suburb": "Abeka",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:41.793889Z",
+      "modified": "2017-03-28T13:47:41.793925Z"
+    },
+    "land_mark": "close to school junction, Ashale botwe",
+    "author": 1,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-03-28T22:36:18.637705Z"
+  "case_images": [
+    {
+      "id": 17,
+      "case_images": "/media/images/about-1-pict_m1FD6Pf.jpg"
+    },
+    {
+      "id": 16,
+      "case_images": "/media/images/about-1-pict_0E8hVN6.jpg"
+    },
+    {
+      "id": 15,
+      "case_images": "/media/images/about-1-pict_wpo22JP.jpg"
+    }
+  ]
+}
+]
+</code></pre>
+</li>
+</ul>
+<h3 id="get-all-reported-faults-and-being-fixed-by-duty-bearers">Get all reported faults and being fixed by duty bearers</h3>
+<ul>
+<li>
+<p>(fixing faults)</p>
+</li>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint:  <code>https://api.example.org/api/v1.0/project-case/fixing-cases/</code></p>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
+<pre><code>[
+  {
+    "id": 11,
+    "case_number": "CC245B8C06",
+    "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "author": 1
+    },
+    "case_name": "User created this case",
+    "case_description": "This is to test if it would separate user",
+    "case_image": "/media/images/vvvvvv_CuW36e6.jpg",
+    "case_status": "fixing",
+    "location": "Ablekuma North Sub Metro",
+    "author": 2,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-02-07T22:18:37.582209Z",
+    "case_images": []
+  },
+  {
+    "id": 13,
+    "case_number": "9BCA763349",
+    "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "author": 1
+    },
+    "case_name": "Another case by user",
+    "case_description": "This is to test if it would separate user again",
+    "case_image": "/media/images/about-1-pict.jpg",
+    "case_status": "fixing",
+    "location": "Ablekuma North Sub Metro",
+    "author": 2,
+    "gravity": true,
+    "count_gravity": 1,
+    "created_date": "2017-02-21T16:21:22.661830Z",
+    "case_images": [
+      {
+        "id": 17,
+        "case_images": "/media/images/about-1-pict_m1FD6Pf.jpg"
+      },
+      {
+        "id": 16,
+        "case_images": "/media/images/about-1-pict_0E8hVN6.jpg"
+      },
+      {
+        "id": 15,
+        "case_images": "/media/images/about-1-pict_wpo22JP.jpg"
+      }
+    ]
+  },
+  {
+  "id": 13,
+  "case_number": "9BCA763349",
+  "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "category_image": null,
+      "author": 1
+    },
+    "case_name": "Test region and suburb",
+    "case_description": "This is to test if it would separate user again",
+    "case_image_one": "/home/eit/Pictures/test.jpg",
+    "case_image_two": "/home/eit/Pictures/test.jpg",
+    "case_image_three": "/home/eit/Pictures/test.jpg",
+    "case_status": "fixing",
+    "region": {
+      "id": 1,
+      "region": "Greater Accra",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:27.384510Z",
+      "modified": "2017-03-28T13:47:27.384535Z"
+    },
+    "suburb": {
+      "id": 1,
+      "region": 1,
+      "suburb": "Abeka",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:41.793889Z",
+      "modified": "2017-03-28T13:47:41.793925Z"
+    },
+    "land_mark": "close to school junction, Ashale botwe",
+    "author": 1,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-03-28T22:36:18.637705Z"
+  "case_images": [
+    {
+      "id": 17,
+      "case_images": "/media/images/about-1-pict_m1FD6Pf.jpg"
+    },
+    {
+      "id": 16,
+      "case_images": "/media/images/about-1-pict_0E8hVN6.jpg"
+    },
+    {
+      "id": 15,
+      "case_images": "/media/images/about-1-pict_wpo22JP.jpg"
+    }
+  ]
+}
+]
+</code></pre>
+</li>
+</ul>
+<h3 id="get-all-fixed-faults-reported">Get all fixed faults reported</h3>
+<ul>
+<li>
+<p>(fixed faults)</p>
+</li>
+<li>
+<p>Method: <code>GET</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/api/v1.0/project-case/fixed-cases/</code></p>
+</li>
+<li>
+<p>Response: <code>200 ok</code></p>
+<pre><code>[
+  {
+    "id": 1,
+    "case_number": "CABBC28380",
+    "case_category": {
+      "id": 2,
+      "category_name": "Water",
+      "description": "This in information about water works",
+      "category_image": null,
+      "author": 1
+    },
+    "case_name": "Test region and suburb",
+    "case_description": "This is to test if it would separate user again",
+    "case_image_one": "/home/eit/Pictures/test.jpg",
+    "case_image_two": "/home/eit/Pictures/test.jpg",
+    "case_image_three": "/home/eit/Pictures/test.jpg",
+    "case_status": "fixed",
+    "region": {
+      "id": 1,
+      "region": "Greater Accra",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:27.384510Z",
+      "modified": "2017-03-28T13:47:27.384535Z"
+    },
+    "suburb": {
+      "id": 1,
+      "region": 1,
+      "suburb": "Abeka",
+      "author": 1,
+      "created_date": "2017-03-28T13:47:41.793889Z",
+      "modified": "2017-03-28T13:47:41.793925Z"
+    },
+    "land_mark": "close to school junction, Ashale botwe",
+    "author": 1,
+    "gravity": false,
+    "count_gravity": 0,
+    "created_date": "2017-03-28T22:36:18.637705Z"
+  "case_images": [
+    {
+      "id": 17,
+      "case_images": "/media/images/about-1-pict_m1FD6Pf.jpg"
+    },
+    {
+      "id": 16,
+      "case_images": "/media/images/about-1-pict_0E8hVN6.jpg"
+    },
+    {
+      "id": 15,
+      "case_images": "/media/images/about-1-pict_wpo22JP.jpg"
+    }
+  ]
+]
+</code></pre>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../update_fcm_id/" class="btn btn-neutral float-right" title="Update fcm_id"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../regions_suburbs/" class="btn btn-neutral" title="Regions and Suburbs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../regions_suburbs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../update_fcm_id/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

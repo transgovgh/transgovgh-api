@@ -6,7 +6,7 @@ pages:
     - 'Developmental Project v2': developmental_project_v2.0.md
     - 'Events': transgov_events.md
     - 'Regions and Suburbs': regions_suburbs.md
-    - 'Report case': report_faults.md
+    - 'Report Faults': report_faults.md
     - 'Update fcm_id': update_fcm_id.md
     - 'Update profile': update_profile.md
     - 'Update user account info': update_user_account.md
