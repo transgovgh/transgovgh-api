@@ -42,18 +42,40 @@
   - Response: ``201 Created``
 
         {
-        "id": 1,
-        "auth_token": "xxxxxxxxxxxxxxxxxxxx",
-        "email": "xxxxx@xxxx.com",
-        "username": "username",
-        "first_name": "first name",
-        "last_name": "last name",
-        "profile": {
           "id": 1,
-          "location": "location",
-          "phone_number": 00000000,
-          "fcm_id": ""
-          }
+          "auth_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "email": "xxxxxxx@gmail.com",
+          "username": "kenmartey",
+          "first_name": "Kennedy",
+          "last_name": "Anyinatoe",
+          "profile": {
+            "id": 1,
+            "region": {
+              "id": 1,
+              "region": "Greater Accra",
+              "author": 1,
+              "created_date": "2017-03-29T10:14:22.989213Z",
+              "modified": "2017-03-29T10:14:22.989254Z"
+            },
+            "suburb": {
+              "id": 1,
+              "region": {
+                "id": 1,
+                "region": "Greater Accra",
+                "author": 1,
+                "created_date": "2017-03-29T10:14:22.989213Z",
+                "modified": "2017-03-29T10:14:22.989254Z"
+              },
+              "suburb": "Abeka",
+              "author": 1,
+              "created_date": "2017-03-29T10:14:38.891566Z",
+              "modified": "2017-03-29T10:14:38.891606Z"
+            },
+            "phone_number": "+233246424340",
+            "profile_image": "https://xxxxxxxxxxxx.amazonxx.com/profile_image/profilepic.jpg",
+            "fcm_id": ""
+          },
+          "firebase": null
         }
 
 
