@@ -111,7 +111,10 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#add-profile">Add Profile</a></li>
+                <li class="toctree-l3"><a href="#create-profile">Create profile</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#update-profile-information-subsequently">Update profile information subsequently</a></li>
                 
             
             </ul>
@@ -158,7 +161,7 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="add-profile">Add Profile</h3>
+                <h3 id="create-profile">Create profile</h3>
 <ul>
 <li>
 <p>Method <code>POST</code></p>
@@ -182,35 +185,27 @@
 <pre><code>{
 "region": 1,
 "suburb": 1,
+"first_name": "xxxxxxx",
+"last_name": "xxxxxxx",
 "phone_number": "0246424340",
-"profile_image": "/media/images/profile-image.jpg"
+"profile_image": "/media/images/profile-image.jpg",
+"social_profile_image": "from social media"
 }
 </code></pre>
 </li>
 <li>
-<p>If it's first time adding <code>region</code> , <code>suburb</code>, <code>phone number</code> and <code>`profile_image</code></p>
+<p>Updating profile details for the first time: parameters - <code>region</code> , <code>suburb</code>, <code>first name</code> <code>last name</code>, <code>phone number</code>, <code>social profile image</code> and <code>profile_image</code></p>
 <ul>
 <li>Response: <code>201 Created</code><pre><code>  {
-    "status_code": 201,
-    "message": "You have added your location and phone number",
-    "result": {
-      "id": 1,
-      "auth_token": "806215e74ce5640a86136b462115301f846023d7",
-      "email": "kenmartey89@gmail.com",
-      "username": "kenmartey",
-      "first_name": "",
-      "last_name": "",
-      "profile": {
-        "id": 2,
-        "region": {
-          "id": 1,
-          "region": "Greater Accra",
-          "author": 1,
-          "created_date": "2017-03-29T09:42:47.763945Z",
-          "modified": "2017-03-29T09:42:47.763970Z"
-        },
-        "suburb": {
-          "id": 1,
+      "status_code": 201,
+      "message": "You have updated your profile details",
+      "result": {
+        "id": 1,
+        "auth_token": "xxxxxxxxxxxxxxxxxxxxxxxx",
+        "email": "xxxxxxxxxxxx@gmail.com",
+        "username": "xxxxxxx",
+        "profile": {
+          "id": 2,
           "region": {
             "id": 1,
             "region": "Greater Accra",
@@ -218,65 +213,103 @@
             "created_date": "2017-03-29T09:42:47.763945Z",
             "modified": "2017-03-29T09:42:47.763970Z"
           },
-          "suburb": "Abeka",
-          "author": 1,
-          "created_date": "2017-03-29T09:43:07.583824Z",
-          "modified": "2017-03-29T09:43:07.583849Z"
+          "suburb": {
+            "id": 1,
+            "region": {
+              "id": 1,
+              "region": "Greater Accra",
+              "author": 1,
+              "created_date": "2017-03-29T09:42:47.763945Z",
+              "modified": "2017-03-29T09:42:47.763970Z"
+            },
+            "suburb": "Abeka",
+            "author": 1,
+            "created_date": "2017-03-29T09:43:07.583824Z",
+            "modified": "2017-03-29T09:43:07.583849Z"
+          },
+          "first_name": "xxxxxxx",
+          "last_name": "xxxxxxxxx",
+          "phone_number": "+233246424340",
+          "profile_image": "/media/profile_image/profilepic.jpg",
+          "social_profile_image": "",
+          "fcm_id": ""
         },
-        "phone_number": "0246424340",
-        "profile_image": "/media/profile_image/profile.jpg",
-        "fcm_id": ""
-      },
-      "firebase": null
+        "firebase": null
+      }
     }
-  }
 </code></pre>
 </li>
 </ul>
 </li>
-<li>
-<p>If <code>region</code> , <code>suburb</code>, <code>phone number</code> and <code>`profile_image</code> already exist, it will update it</p>
+</ul>
+<h3 id="update-profile-information-subsequently">Update profile information subsequently</h3>
 <ul>
-<li>Response: <code>201 Created</code><pre><code>{
-  "status_code": 201,
-  "message": "You have added your location and phone number",
-  "result": {
-    "id": 1,
-    "auth_token": "806215e74ce5640a86136b462115301f846023d7",
-    "email": "kenmartey89@gmail.com",
-    "username": "kenmartey",
-    "first_name": "",
-    "last_name": "",
-    "profile": {
-      "id": 2,
-      "region": {
-        "id": 1,
-        "region": "Greater Accra",
-        "author": 1,
-        "created_date": "2017-03-29T09:42:47.763945Z",
-        "modified": "2017-03-29T09:42:47.763970Z"
-      },
-      "suburb": {
-        "id": 1,
-        "region": {
-          "id": 1,
-          "region": "Greater Accra",
-          "author": 1,
-          "created_date": "2017-03-29T09:42:47.763945Z",
-          "modified": "2017-03-29T09:42:47.763970Z"
-        },
-        "suburb": "Abeka",
-        "author": 1,
-        "created_date": "2017-03-29T09:43:07.583824Z",
-        "modified": "2017-03-29T09:43:07.583849Z"
-      },
-      "phone_number": "0246424340",
-      "profile_image": "/media/profile_image/profile.jpg",
-      "fcm_id": ""
-    },
-    "firebase": null
-  }
+<li>
+<p>Method <code>POST</code></p>
+</li>
+<li>
+<p>Endpoint: <code>https://api.example.org/v1.0/users/add-profile/</code></p>
+</li>
+<li>
+<p>Request: <code>[JSON Body]</code></p>
+</li>
+<li>
+<p>Note: <code>profile_image</code> are is a file field</p>
+<pre><code>{
+"region": 1,
+"suburb": 1,
+"first_name": "xxxxxxx",
+"last_name": "xxxxxxx",
+"phone_number": "0246424340",
+"profile_image": "/media/images/profile-image.jpg",
+"social_profile_image": "from social media"
 }
+</code></pre>
+</li>
+<li>
+<p>If <code>region</code> , <code>suburb</code>, <code>first name</code> <code>last name</code>, <code>phone number</code>, <code>social profile image</code> and <code>profile_image</code> already exist, it will update it</p>
+<ul>
+<li>Response: <code>201 Created</code><pre><code>    {
+      "status_code": 201,
+      "message": "You have updated your profile details",
+      "result": {
+        "id": 1,
+        "auth_token": "xxxxxxxxxxxxxxxxxxxxxxxx",
+        "email": "xxxxxxxxxxxx@gmail.com",
+        "username": "xxxxxxx",
+        "profile": {
+          "id": 2,
+          "region": {
+            "id": 1,
+            "region": "Greater Accra",
+            "author": 1,
+            "created_date": "2017-03-29T09:42:47.763945Z",
+            "modified": "2017-03-29T09:42:47.763970Z"
+          },
+          "suburb": {
+            "id": 1,
+            "region": {
+              "id": 1,
+              "region": "Greater Accra",
+              "author": 1,
+              "created_date": "2017-03-29T09:42:47.763945Z",
+              "modified": "2017-03-29T09:42:47.763970Z"
+            },
+            "suburb": "Abeka",
+            "author": 1,
+            "created_date": "2017-03-29T09:43:07.583824Z",
+            "modified": "2017-03-29T09:43:07.583849Z"
+          },
+          "first_name": "xxxxxxx",
+          "last_name": "xxxxxxxxx",
+          "phone_number": "+233246424340",
+          "profile_image": "/media/profile_image/profilepic.jpg",
+          "social_profile_image": "",
+          "fcm_id": ""
+        },
+        "firebase": null
+      }
+    }
 </code></pre>
 </li>
 </ul>
